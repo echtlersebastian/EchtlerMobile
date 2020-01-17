@@ -20,7 +20,7 @@ return(
                                         <i className="fa fa-plus fa-3x"></i>
                                     </div>
                                 </div>
-                                <img className="img-fluid" src={ `https://unsplash.it/350/350/?${Math.floor(Math.random(0,100) * 100)}` }  alt="portfolio_img"/>
+                                <img className="img-fluid" src={ `https://unsplash.it/350/350/?${Math.floor(Math.random(0,100) * 100)}` }   alt="portfolio_img"/>
                             </a>
                             <div className="portfolio-caption">
                                 <h4>{ title }</h4>

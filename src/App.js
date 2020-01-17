@@ -42,7 +42,7 @@ function App() {
         caption: 'Caption6' 
        }
     ]
-    
+
     const serviceLinks = [
       {
         title: 'Mir hätten da was zum anbieten für Sie.',
@@ -58,6 +58,8 @@ function App() {
        }
     ]
     
+
+
   return (
     <div>
 

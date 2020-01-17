@@ -109,7 +109,6 @@ img::-moz-selection {
 
 #mainNav {
   background-color: #212529;
-  position: fixed;
 }
 
 #mainNav .navbar-toggler {
@@ -147,11 +146,11 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+    background-color: #212529;
   }
   #mainNav .navbar-brand {
     font-size: 1.75em;
@@ -170,7 +169,7 @@ img::-moz-selection {
     padding: 12px 0;
   }
 }
-
+ 
 header.masthead {
   text-align: center;
   color: white;
@@ -179,11 +178,43 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  width: 100%;
+height:100%;
+
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 0px;
   padding-bottom: 100px;
+}
+
+
+
+@media (max-width: 767px) {   
+  header.masthead .logo1 {
+    
+padding-bottom: 00px;
+padding-top: 500px;
+  width: 100%;
+  height:100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url("../img/Logo250x250.png");
+  } 
+}
+@media (min-width: 768px) {   
+  header.masthead .logo1 {
+    
+padding-bottom: 150px;
+padding-top: 500px;
+  width: 100%;
+  height:100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-image: url("../img/Logo500x500.png");
+  } 
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -204,8 +235,8 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 0px;
+    padding-bottom: 100px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
