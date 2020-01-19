@@ -12,13 +12,13 @@ return(
           
           
     
-          <div className= "logo1">
-
+    <div className= "logo1">
           </div>
             <div className="intro-text">
          
-            <div className="intro-heading text-uppercase">Mit dem Wohnmobil auf neuen Wegen!</div>
-            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Oh ja, da bin ich aber vielleicht hart interessiert.</a>
+            {/*<div className="intro-heading text-uppercase">Mit dem Wohnmobil auf neuen Wegen!</div>*/}
+            <div className="intro-heading text-uppercase">Wir bauen um und sind bald für Sie da!</div>
+            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="mailto:info@Echtler-Mobile.de?Subject=Echtler-Mobile Kontakt">Schreiben Sie doch eine Email!</a>
             </div>
            
     </header>

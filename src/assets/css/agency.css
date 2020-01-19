@@ -95,12 +95,13 @@ img::-moz-selection {
 .btn-primary {
   background-color: #fed136;
   border-color: #fed136;
+  color:black;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
   background-color: #fec810 !important;
   border-color: #9e8637 !important;
-  color: white;
+  color: black;
 }
 
 .btn-primary:active, .btn-primary:focus {
@@ -172,12 +173,12 @@ img::-moz-selection {
  
 header.masthead {
   text-align: center;
-  color: white;
-  background-image: url("../img/header-bg.jpg");
+  color: black;
+  /*background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: cover;*/
   width: 100%;
 height:100%;
 
