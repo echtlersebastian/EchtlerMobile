@@ -7,7 +7,7 @@ return(
   <div className="row align-items-center">
 
     <div className="col-md-4 copyright">
-      <span>Telefon: +49 (0) 8341 9969353</span>
+      <span>Telefon: +49 (0) 8341 9969535</span>
       <br></br>
       <span>E-Mail: info@Echtler-Mobile.de</span>
       <br></br>

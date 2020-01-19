@@ -32,7 +32,7 @@ return(
 */}
             <ul className="list-inline social-buttons">
           <li className="list-inline-item">
-            <a href="tel:+49083419969353">
+            <a href="tel:+4983419969535">
               <i className="fa fa-phone"></i>
             </a>
           </li>
