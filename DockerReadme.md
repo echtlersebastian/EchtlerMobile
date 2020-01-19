@@ -13,4 +13,7 @@ docker run --name echtlermobiledev -p 49160:5000 echtlermobiledev
 # prod:
 # baut das docker image für die prod environment
 docker build -f Dockerfile-Prod -t echtlermobileprod .
+# speichert das docker image zum deployen weg
+docker save -o echtlermobileproddockerimage echtlermobileprod
+# startet das docker image auf der lokalen Kiste
 docker run --name echtlermobileprod -p 49160:80 echtlermobileprod
