@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../assets/css/agency.css';
 
-export default ({portfolioLinks}) => {
+export default () => {
 return(
   <div>
 
