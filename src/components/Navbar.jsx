@@ -15,6 +15,7 @@ return(
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav text-uppercase ml-auto">
+          {/*
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#services">Unser Service</a>
           </li>
@@ -29,6 +30,10 @@ return(
           </li>
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+          </li>*/}
+
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#footer">Impressum</a>
           </li>
         </ul>
       </div>
