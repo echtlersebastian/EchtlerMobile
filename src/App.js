@@ -67,7 +67,7 @@ function App() {
 
         <Masterhead></Masterhead>
         
-        {/*<Service serviceLinks = {serviceLinks}></Service>
+        <Service serviceLinks = {serviceLinks}></Service>
           
         <Portfolio portfolioLinks = {portfolioLinks}></Portfolio>
           
@@ -77,7 +77,7 @@ function App() {
 
         <BottomPictures></BottomPictures>
 
-        <ContactUs></ContactUs>*/}
+        <ContactUs></ContactUs>
 
         <Footer></Footer>
         

@@ -18,7 +18,7 @@ return(
          
             {/*<div className="intro-heading text-uppercase">Mit dem Wohnmobil auf neuen Wegen!</div>*/}
             <div className="intro-heading text-uppercase">Wir bauen um und sind bald für Sie da!</div>
-            <div className="intro-lead-in" href="tel:">Rufen sie doch an oder schreiben Sie eine E-Mail!</div>
+            <div className="intro-lead-in" href="tel:">Rufen Sie an oder schreiben Sie eine E-Mail!</div>
 
             {/*<a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="mailto:info@Echtler-Mobile.de?Subject=Echtler-Mobile Kontakt"><span class="fa fa-envelope"></span></a>
             <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="tel:+49083419969353"><span class="fa fa-phone"></span></a>

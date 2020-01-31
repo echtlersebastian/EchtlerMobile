@@ -1,7 +1,12 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
+import { render } from 'react-dom'
+import PortfolioModal from './PortfolioModal'
+import Modal from '../assets/scripts/scrips'
 
 export default ({portfolioLinks}) => {
 return(
+    <div>
             <section className="bg-light page-section" id="portfolio">
             <div className="container">
             <div className="row">
@@ -31,7 +36,23 @@ return(
                 }
             </div>
             </div>
+
+
+            
         </section>
+        <div>
+<Container>
+    
+          <button className="button" ><img className="img-fluid" src={ `https://unsplash.it/350/350/?${Math.floor(Math.random(0,100) * 100)}` }   alt="portfolio_img" onClick={Modal.render()}
+            
+            /> </button>
+  
+            <span>
+            </span>
+    
+            </Container>
+        </div>
+        </div>
     )
 
 }

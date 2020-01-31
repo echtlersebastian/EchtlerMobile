@@ -173,12 +173,13 @@ img::-moz-selection {
  
 header.masthead {
   text-align: center;
-  color: black;
-  /*background-image: url("../img/header-bg.jpg");
+  text-shadow: 0px 0px 12px rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background-image: url("../img/Background.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;*/
+  background-size: cover;
   width: 100%;
 height:100%;
 
@@ -194,13 +195,13 @@ header.masthead .intro-text {
 @media (max-width: 767px) {   
   header.masthead .logo1 {
     
-padding-bottom: 00px;
-padding-top: 500px;
+padding-bottom: 40px;
+padding-top: 310px;
   width: 100%;
   height:100%;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center center;
+    background-position: bottom center;
     background-image: url("../img/Logo250x250.png");
   } 
 }
@@ -228,9 +229,10 @@ header.masthead .intro-text .intro-lead-in {
 
 header.masthead .intro-text .intro-heading {
   font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
+  font-weight: 600;
+  line-height: 46px;
   margin-bottom: 25px;
+  margin-top: 15px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 

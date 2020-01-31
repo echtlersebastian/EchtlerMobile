@@ -11,9 +11,8 @@ return(
       <br></br>
       <span>E-Mail: info@Echtler-Mobile.de</span>
       <br></br>
-      <span>Inhaltlich verantwortlich: Manfred Echtler</span>
+      <span>Inhaltlich verantwortlich: Manfred Echtler<wbr/></span>
     </div>
-
     <div className="col-md-4 copyright">
       <span>Impressum:</span>
       <br></br>
@@ -21,13 +20,15 @@ return(
       <br></br>
       <span>Wohnmobilvermietung und KFZ- Handel</span>
       <br></br>
+      <span>Steuernummer: 125/213/31435</span>
+      <br></br>
       <span>Inhaber: Manfred Echtler</span>
       <br></br>
       <span>Frankenrieder Str. 19</span>
       <br></br>
       <span>87600 Kaufbeuren</span>
     </div>
-
+    <br></br>
     <div className="col-md-4 copyright">
       <span className="streitbeilegung">Wir sind nicht bereit und nicht verpflichtet an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</span>
     </div>
