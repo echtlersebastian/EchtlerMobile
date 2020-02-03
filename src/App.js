@@ -18,28 +18,28 @@ function App() {
     const portfolioLinks = [
 
       {
-        title: 'Title1',
-        caption: 'Caption1' 
+        title: 'Unsere Wohnmobile',
+        caption: 'Schauen Sie sich unsere Wohnmobile an!' 
        },
        {
-        title: 'Title2',
-        caption: 'Caption2' 
+        title: 'Im Wohnmobil enthalten',
+        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' 
        },
        {
-        title: 'Title3',
-        caption: 'Caption3' 
+        title: 'Urlaubs Inspiration',
+        caption: 'Egal welches Ziel Sie haben - Mit unseren Wohnmobilen kommen Sie dorthin!' 
        },
        {
-        title: 'Title4',
-        caption: 'Caption4' 
+        title: 'Vertragsbedingungen',
+        caption: 'Hier finde sie eine zusammengefaste Übersicht unserer Vertragsbedingungen' 
        },
        {
-        title: 'Title5',
-        caption: 'Caption5' 
+        title: 'Preisliste',
+        caption: 'aktuelle Preise für das Jahr 2020' 
        },
        {
-        title: 'Title6',
-        caption: 'Caption6' 
+        title: 'AGB',
+        caption: 'Unsere Vertragsbedingungen' 
        }
     ]
 
@@ -58,7 +58,50 @@ function App() {
        }
     ]
     
-
+    const TimeLineItems = [
+      {
+        title: 'Mir hätten da was zum anbieten für Sie.',
+        subheading: 'subheading',
+        caption: 'Wennses kaufn mögts, dann klingts halt vorne.',
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       },
+       {
+        title: 'Title2',
+        subheading: 'subheading',
+        caption: 'Caption2', 
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       },
+       {
+        title: 'Title3',
+        subheading: 'subheading',
+        caption: 'Caption3',
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       },
+       {
+        title: 'Title4',
+        subheading: 'subheading',
+        caption: 'Caption4',
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       },
+       {
+        title: 'Title5',
+        subheading: 'subheading',
+        caption: 'Caption3',
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       },
+       {
+        title: 'Title6',
+        subheading: 'subheading',
+        caption: 'Caption4',
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       },
+       {
+        title: 'Rückgabe',
+        subheading: 'Geben sie ihr wohnmobil unkompliziert zurück',
+        caption: 'Wenn sie aus dem Urlaub wieder daheim sind, dann können sie ganz einfach bei uns vorbeikommen und das Wohnmobil wieder abgeben.',
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       }
+    ]
 
   return (
     <div>
@@ -71,7 +114,7 @@ function App() {
           
         <Portfolio portfolioLinks = {portfolioLinks}></Portfolio>
           
-        <HowToBuyElements></HowToBuyElements>
+        <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>
           
         <Team></Team>
 
