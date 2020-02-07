@@ -19,27 +19,33 @@ function App() {
 
       {
         title: 'Unsere Wohnmobile',
-        caption: 'Schauen Sie sich unsere Wohnmobile an!' 
+        caption: 'Schauen Sie sich unsere Wohnmobile an!',
+        content : "content1"
        },
        {
         title: 'Im Wohnmobil enthalten',
-        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' 
+        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' ,
+        content : "content2"
        },
        {
         title: 'Urlaubs Inspiration',
-        caption: 'Egal welches Ziel Sie haben - Mit unseren Wohnmobilen kommen Sie dorthin!' 
+        caption: 'Egal welches Ziel Sie haben - Mit unseren Wohnmobilen kommen Sie dorthin!',
+        content : "content3"
        },
        {
         title: 'Vertragsbedingungen',
-        caption: 'Hier finde sie eine zusammengefaste Übersicht unserer Vertragsbedingungen' 
+        caption: 'Hier finde sie eine zusammengefaste Übersicht unserer Vertragsbedingungen',
+        content : "content4"
        },
        {
         title: 'Preisliste',
-        caption: 'aktuelle Preise für das Jahr 2020' 
+        caption: 'aktuelle Preise für das Jahr 2020',
+        content : "content5"
        },
        {
         title: 'AGB',
-        caption: 'Unsere Vertragsbedingungen' 
+        caption: 'Unsere Vertragsbedingungen',
+        content : <img className="img-fluid" src={`https://unsplash.it/600/600/?${Math.floor(Math.random(0,100) * 100)}`}></img>
        }
     ]
 
@@ -115,10 +121,7 @@ function App() {
         <Portfolio portfolioLinks = {portfolioLinks}></Portfolio>
           
         <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>
-          
-        <Team></Team>
-
-        <BottomPictures></BottomPictures>
+    
 
         <ContactUs></ContactUs>
 

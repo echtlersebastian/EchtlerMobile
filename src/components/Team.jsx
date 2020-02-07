@@ -15,8 +15,8 @@ return(
     <div className="col-sm-4">
       <div className="team-member">
         <img className="mx-auto rounded-circle" src="img/team/1.jpg" alt=""/>
-        <h4>Kay Garland</h4>
-        <p className="text-muted">Lead Designer</p>
+        <h4>Alexander Moszczynski</h4>
+        <p className="text-muted">Lead Front-End God</p>
         <ul className="list-inline social-buttons">
           <li className="list-inline-item">
             <a href="#">

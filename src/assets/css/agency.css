@@ -342,11 +342,11 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content {
-  padding: 100px 0;
+  padding: 1px 0;
   text-align: center;
 }
 
-.portfolio-modal .modal-content h2 {
+.portfolio-modal .modal-header h2 {
   font-size: 3em;
   margin-bottom: 15px;
 }
