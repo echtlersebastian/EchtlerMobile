@@ -8,10 +8,12 @@ import Service from './components/Service';
 import Navbar from './components/Navbar';
 import Masterhead from './components/Masterhead';
 import HowToBuyElements from './components/HowToBuyElements/HowToBuy';
+import WohnmobilModal from './components/Modlas/WohnmobilModal';
 import Team from './components/Team';
 import BottomPictures from './components/BottomPictures';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
+import PortfolioModal from './components/PortfolioModal';
 
 function App() {
 
@@ -20,7 +22,7 @@ function App() {
       {
         title: 'Unsere Wohnmobile',
         caption: 'Schauen Sie sich unsere Wohnmobile an!',
-        content : "content1"
+        content : <WohnmobilModal></WohnmobilModal>
        },
        {
         title: 'Im Wohnmobil enthalten',
@@ -40,7 +42,7 @@ function App() {
        {
         title: 'Preisliste',
         caption: 'aktuelle Preise für das Jahr 2020',
-        content : "content5"
+        content : <PortfolioModal></PortfolioModal>
        },
        {
         title: 'AGB',
@@ -115,7 +117,7 @@ function App() {
         <Navbar></Navbar>    
 
         <Masterhead></Masterhead>
-        
+        <PortfolioModal></PortfolioModal>
         {/*<Service serviceLinks = {serviceLinks}></Service>*/}
           
         <Portfolio portfolioLinks = {portfolioLinks}></Portfolio>

@@ -1,6 +1,13 @@
 
 import React from 'react'
 
+
+
+
+
+
+
+
 export default () => {
 return(
 <section className="bg-light page-section" id="team">
@@ -16,7 +23,7 @@ return(
       <div className="team-member">
         <img className="mx-auto rounded-circle" src="img/team/1.jpg" alt=""/>
         <h4>Alexander Moszczynski</h4>
-        <p className="text-muted">Lead Front-End God</p>
+        <p className="text-muted">1337 Front-End God</p>
         <ul className="list-inline social-buttons">
           <li className="list-inline-item">
             <a href="#">

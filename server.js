@@ -2,18 +2,33 @@ const express =  require("express");
 const bodyParser =  require("body-parser").json();
 const mailer = require("nodemailer");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 
 app.use(cors());
 app.use(bodyParser);
 
+app.use(express.static(path.join(__dirname, "/build")));
+
+// GET to index serves the built file
+app.get("/", (req,res)=>{
+    console.log("GET index")
+    res.sendFile(path.join(__dirname, "/build", "index.html"))
+})
+
+// Accept POST for mailing
 app.post("/contactus", (req, resp)=>{
-    console.log('incoming');
+
     const message = req.body.message;
     const sender = req.body.sender;
     const name = req.body.name
     const phone = req.body.phone;
+
+    console.log(`incoming request: 
+    name    : ${name}
+    sender  : ${sender}
+    message : ${message}`);
 
     let transport = mailer.createTransport({
         host : "smtp.strato.de",

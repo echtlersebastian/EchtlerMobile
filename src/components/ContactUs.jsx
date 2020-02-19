@@ -22,7 +22,7 @@ class ContactUs extends React.Component {
 
   onSubmit() {
     debugger;
-    axios.post("http://localhost:3001/contactus", {
+    axios.post("/contactus", {
       message : this.state.message,
       sender : this.state.address,
       phone  : this.state.phone,

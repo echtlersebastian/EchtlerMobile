@@ -1,5 +1,6 @@
+#!/bin/sh
 FROM node:12.14
-WORKDIR /usr/src
+WORKDIR /home/pi/DEV
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied

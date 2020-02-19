@@ -8,8 +8,9 @@
 # baut das docker image für dev neu (der source krempel der app, siehe dockerfile)
 docker build -t echtlermobiledev .
 # startet den devserver im containe
-docker run --name echtlermobiledev -p 49160:5000 echtlermobiledev
-
+docker run --name echtlermobiledevdev -p 49160:5000 echtlermobiledevdev
+# start dev server
+docker run --name echtlermobileproddockerimagedev -p 49160:5000 echtlermobileproddockerimagedev
 # prod:
 # baut das docker image für die prod environment
 docker build -f Dockerfile-Prod -t echtlermobileprod .

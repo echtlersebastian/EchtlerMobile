@@ -4,15 +4,8 @@ import '../assets/css/agency.css';
 
 export default () => {
 return(
+    
 
-    <div className="portfolio-modal modal fade show" id="portfolioModal1" tabindex="-1" role="dialog" aria-modal="true">
-        <div className="modal-dialog">
-            <div className="modal-content">
-                <div className="close-modal" data-dismiss="modal">
-                    <div className="lr">
-                        <div className="rl"></div>
-                    </div>
-                </div>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 mx-auto">
@@ -34,8 +27,6 @@ return(
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+   
   )
   }
