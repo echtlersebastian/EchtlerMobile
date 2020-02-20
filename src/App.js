@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Masterhead from './components/Masterhead';
 import HowToBuyElements from './components/HowToBuyElements/HowToBuy';
 import WohnmobilModal from './components/Modlas/WohnmobilModal';
+import AustattungModal from './components/Modlas/AusstattungsModal';
 import Team from './components/Team';
 import BottomPictures from './components/BottomPictures';
 import ContactUs from './components/ContactUs';
@@ -27,7 +28,7 @@ function App() {
        {
         title: 'Im Wohnmobil enthalten',
         caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' ,
-        content : "content2"
+        content : <AustattungModal></AustattungModal>
        },
        {
         title: 'Urlaubs Inspiration',
