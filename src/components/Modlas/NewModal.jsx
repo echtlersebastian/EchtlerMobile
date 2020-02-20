@@ -1,10 +1,16 @@
 import React from 'react'
 import { Row,Col } from "react-bootstrap"
+import image from "../../assets/img/WomoExport1.png"
 
 export default () => {
     return(
+        <div>
     <div className = "container">
-       
+<img className="img-fluid" src={image} alt="asdasd" />
+       <br></br>
+        <Row>
+            <br></br>
+        </Row>
         <Row>
 <div class="col-6 col-md-3"><span class="font-weight-bold">Baujahr</span></div>
 <div class="col-6 col-md-3"><span >2018</span></div>
@@ -24,6 +30,7 @@ export default () => {
 <div class="col-6 col-md-3"><span class="ng-star-inserted">163</span></div>
 </Row>
 
+</div>
 </div>
 )
 }

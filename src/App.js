@@ -24,7 +24,7 @@ function App() {
       {
         title: 'Unsere Wohnmobile',
         caption: 'Schauen Sie sich unsere Wohnmobile an!',
-        content : <WohnmobilModal></WohnmobilModal>
+        content : <NewModal></NewModal>
        },
        {
         title: 'Im Wohnmobil enthalten',
@@ -119,8 +119,6 @@ function App() {
         <Navbar></Navbar>    
         <Masterhead></Masterhead>
         <Service serviceLinks = {serviceLinks}></Service>
-          
-        <NewModal></NewModal>
         <Portfolio portfolioLinks = {portfolioLinks}></Portfolio>
           
         <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>

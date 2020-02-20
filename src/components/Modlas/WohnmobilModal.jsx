@@ -2,6 +2,7 @@ import React from 'react'
 import { Row } from "react-bootstrap"
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
+import images from "../../assets/img/test.jpg"
 
 export default () => {
 return(
@@ -20,8 +21,12 @@ return(
             clickToChange
             centered
             >
-              <img alt ="" src={`https://unsplash.it/350/350/?${Math.floor(Math.random(0, 100) * 100)}`} />
-              <img alt ="" src={`https://unsplash.it/350/350/?${Math.floor(Math.random(0, 100) * 100)}`} />
+            <img alt ="" src={images} />
+              <img alt ="" src={images} />
+              <img alt ="" src={images} />
+              <img alt ="" src={images} />
+              <img alt ="" src={images} />
+              <img alt ="" src={images} />
           </Carousel>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Modal from "react-bootstrap/Modal";
 import { Row, Col } from "react-bootstrap"
+import images from "../assets/img/test.jpg"
 
 class Portfolio extends React.Component {
     constructor(props) {
