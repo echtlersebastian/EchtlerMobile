@@ -28,7 +28,7 @@ function App() {
        {
         title: 'Im Wohnmobil enthalten',
         caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' ,
-        content : "content2"
+        content : <AustattungModal></AustattungModal>
        },
        {
         title: 'Urlaubs Inspiration',
