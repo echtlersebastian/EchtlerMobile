@@ -1,0 +1,24 @@
+.BrainhubCarousel {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    .BrainhubCarousel__trackContainer {
+      overflow: hidden;
+      .BrainhubCarousel__track {
+        display: flex;
+        overflow: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+  
+        &.BrainhubCarousel__track--transition {
+          transition: transform;
+        }
+      }
+    }
+  }
+  
+  /* arrows */
+  .BrainhubCarousel__arrows {
+    cursor: pointer;
+  }

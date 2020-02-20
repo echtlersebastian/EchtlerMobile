@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import Masterhead from './components/Masterhead';
 import HowToBuyElements from './components/HowToBuyElements/HowToBuy';
 import WohnmobilModal from './components/Modlas/WohnmobilModal';
+import NewModal from './components/Modlas/NewModal';
 import Team from './components/Team';
 import BottomPictures from './components/BottomPictures';
 import ContactUs from './components/ContactUs';
@@ -115,11 +116,10 @@ function App() {
     <div>
 
         <Navbar></Navbar>    
-
         <Masterhead></Masterhead>
-        <PortfolioModal></PortfolioModal>
-        {/*<Service serviceLinks = {serviceLinks}></Service>*/}
+        <Service serviceLinks = {serviceLinks}></Service>
           
+        <NewModal></NewModal>
         <Portfolio portfolioLinks = {portfolioLinks}></Portfolio>
           
         <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>
