@@ -30,10 +30,11 @@ class ContactUs extends React.Component {
       phone  : this.state.phone,
       name : this.state.name
     }).then((res)=>{
-      toast.success("Ihre Anfrage ist eingegangen.", { 
+      toast.success("Danke! Ihre Anfrage ist bei uns eingegangen.", { 
         position : toast.POSITION.BOTTOM_CENTER 
       });
     }).catch((e)=>{
+      
 
       const errorMessage = <div><span>Beim Versenden ihrer Anfrage ist ein Fehler aufgetreten.</span>
       <br/><span>Bitte kontaktieren sie uns telefonisch.</span></div>;
