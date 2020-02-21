@@ -6,7 +6,7 @@ import imgEquipment from "../../assets/img/AusstattungModal.png"
 export default (props) => {
   return (
   <div>
-    <Image style={{maxWidth : '64%'}} fluid src={imgEquipment} alt="Ausstattung"/>
+    <Image style={{maxHeight : '30rem'}} fluid src={imgEquipment} alt="Ausstattung"/>
     <Row>
     <Col>
       <ListGroup>
