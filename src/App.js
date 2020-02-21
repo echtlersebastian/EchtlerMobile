@@ -12,6 +12,9 @@ import AustattungsDetails from './components/Modlas/AusstattungsDetails';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import PortfolioModal from './components/PortfolioModal';
+import ExtrasDetails from "./components/Modlas/ExtrasDetails"
+
+
 
 function App() {
 
@@ -19,18 +22,18 @@ function App() {
 
       {
         title: 'Unsere Wohnmobile',
-        caption: 'Schauen Sie sich unsere Wohnmobile an!',
+        caption: 'Schauen Sie sich hier unsere Wohnmobile an.',
         content : <WohnmobilDetails/>
        },
        {
         title: 'Im Wohnmobil enthalten',
-        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten',
+        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten.',
         content : <AustattungsDetails/>
        },
        {
-        title: 'Urlaubs Inspiration',
-        caption: 'Egal welches Ziel Sie haben - Mit unseren Wohnmobilen kommen Sie dorthin!',
-        content : "content3"
+        title: 'Zubuchbare Extras',
+        caption: 'Bei uns bleiben keine Wünsche offen.',
+        content : <ExtrasDetails/>
        },
        {
         title: 'Vertragsbedingungen',
