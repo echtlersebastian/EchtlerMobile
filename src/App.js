@@ -29,7 +29,7 @@ function App() {
        {
         title: 'Im Wohnmobil enthalten',
         caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' ,
-        content : <AustattungsModal></AustattungsModal>
+        content : <WohnmobilModal></WohnmobilModal>
        },
        {
         title: 'Urlaubs Inspiration',
@@ -123,7 +123,6 @@ function App() {
           
         <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>
     
-
         <ContactUs></ContactUs>
 
         <Footer></Footer>
@@ -131,5 +130,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
