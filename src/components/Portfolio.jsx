@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Modal from "react-bootstrap/Modal";
-import { Row, Col } from "react-bootstrap"
+import { Row, Col, Button } from "react-bootstrap"
 import images from "../assets/img/test.jpg"
 
 class Portfolio extends React.Component {
@@ -47,10 +47,6 @@ class Portfolio extends React.Component {
                     </div>
                 </div>
                 {this.state.currentItem && <Modal className="portfolio-modal" show={this.state.show} onHide={handleClose}>
-                    {/* <Modal.Header onClick={handleClose}> 
-                        <h2>{this.state.currentItem.title}</h2>
-                    </Modal.Header> */}
-
                     <Modal.Body className="modal-body">
                         <Row>
                             <Col>
@@ -62,20 +58,16 @@ class Portfolio extends React.Component {
                                 <i className="fa fa-close fa-2x float-right mr-2" onClick={handleClose} />
                             </Col>
                         </Row>
-
-
                         <div className="item-intro text-muted">{this.state.currentItem.caption}</div><br />
                         {this.state.currentItem.content}
-                    </Modal.Body>
-                    <Modal.Footer>
                         <Row>
                             <Col/>
                             <Col>
-                                <span onClick={handleClose}>Schließen</span>
+                                <Button className="my-2" variant='primary' onClick={handleClose}>Schließen</Button>
                             </Col>
                             <Col/>
                         </Row>
-                    </Modal.Footer>
+                    </Modal.Body>
                 </Modal>}
             </section>
         )

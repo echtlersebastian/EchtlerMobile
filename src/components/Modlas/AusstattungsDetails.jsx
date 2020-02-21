@@ -22,7 +22,7 @@ export default () => {
     </Col>
     <Col>
       <ListGroup>
-        <ListGroup.Item active>Fahrzeugausstattung</ListGroup.Item>
+        <ListGroup.Item active>Innenausstattung</ListGroup.Item>
         <ListGroup.Item>Kühlschrank (167 l) mit großen Gefrierfach (29 l)</ListGroup.Item>       
         <ListGroup.Item>Inklusive zwei Stühlen und einem Tisch</ListGroup.Item>
         <ListGroup.Item>Vollständiges Geschirrset</ListGroup.Item>
