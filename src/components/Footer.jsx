@@ -9,7 +9,7 @@ return(
     <div className="col-md-4 copyright">
       <span>Telefon: +49 (0) 8341 9969353</span>
       <br></br>
-      <span>E-Mail: info@Echtler-Mobile.de</span>
+      <span>E-Mail: <a href="mailto:info@Echtler-Mobile.de">info@Echtler-Mobile.de</a></span>
       <br></br>
       <span>Inhaltlich verantwortlich: Manfred Echtler</span>
     </div>
@@ -19,7 +19,7 @@ return(
       <br></br>
       <span>Echtler-Mobile</span>
       <br></br>
-      <span>Wohnmobilvermietung und KFZ- Handel</span>
+      <span>Wohnmobilvermietung und KFZ-Handel</span>
       <br></br>
       <span>Inhaber: Manfred Echtler</span>
       <br></br>

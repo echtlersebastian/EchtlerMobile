@@ -64,9 +64,18 @@ class Portfolio extends React.Component {
                         </Row>
 
 
-                        <div className = "item-intro text-muted">{this.state.currentItem.caption}</div><br />
+                        <div className="item-intro text-muted">{this.state.currentItem.caption}</div><br />
                         {this.state.currentItem.content}
                     </Modal.Body>
+                    <Modal.Footer>
+                        <Row>
+                            <Col/>
+                            <Col>
+                                <span onClick={handleClose}>Schließen</span>
+                            </Col>
+                            <Col/>
+                        </Row>
+                    </Modal.Footer>
                 </Modal>}
             </section>
         )

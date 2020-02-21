@@ -27,10 +27,8 @@ class TimeLine extends React.Component {
         return <TimeLinePannel key={index} title={title} subheading={subheading} caption={caption} imgUrl={imgUrl}></TimeLinePannel>
       }
     });
-    debugger;
     console.log(result);
     return result;
-
   };
 
   render() {
@@ -58,8 +56,8 @@ class TimeLine extends React.Component {
                 <li className="timeline-inverted">
                   <div className="timeline-image">
                     <h4>Be Part
-                  <br />Of Our
-                  <br />Story!</h4>
+                  <br/>Of Our
+                  <br/>Story!</h4>
                   </div>
                 </li>
               </ul>

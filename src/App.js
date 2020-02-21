@@ -13,11 +13,11 @@ import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import PortfolioModal from './components/PortfolioModal';
 import ExtrasDetails from "./components/Modlas/ExtrasDetails"
-
+import {ToastContainer, toast} from "react-toastify";
 
 
 function App() {
-
+    toast.configure();
     const portfolioLinks = [
 
       {
@@ -123,7 +123,7 @@ function App() {
         <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>
     
         <ContactUs></ContactUs>
-
+        <ToastContainer/>
         <Footer></Footer>
         
     </div>

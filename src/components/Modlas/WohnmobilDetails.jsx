@@ -1,33 +1,45 @@
 import React from 'react'
-import { Row, Col } from "react-bootstrap"
-import image from "../../assets/img/WomoExport1.png"
+import { Row, Col, ListGroup, Image } from "react-bootstrap"
 
-export default () => {
+import imgWomo from "../../assets/img/WohnmobilGrundriss.jpg"
+
+export default (props) => {
+    const specs = [
+        { attribute: "Hersteller", value: "Carado Hymer Group" },
+        { attribute: "Modelbezeichnung", value: "T 338" },
+        { attribute: "Fahrgestell", value: "Fiat Tiefrahmen" },
+        { attribute: "Bauweise", value: "Teilintegriert" },
+        { attribute: "Gesamtlänge", value: "6,99 m" },
+        { attribute: "Gesamtbreite", value: "2,32 m" },
+        { attribute: "Gesamthöhe", value: "2,90 m" },
+        { attribute: "Zul. Gesamtgewicht", value: "3,49 t" },
+        { attribute: "Max. Zuladung", value: "600 kg" },
+        { attribute: "Max. Zuladung (Heckgarage)", value: "150 kg" },
+        { attribute: "Leistung", value: "102 kW (140 PS)" },
+        { attribute: "Abgasnorm", value: "Euro 6d-Temp" },
+        { attribute: "Erforderliche Führerscheinklasse", value: "B (3)" }
+    ];
     return (
-        <div className="container">
-            <img className="img-fluid" src={image} alt="asdasd" />
-            <br></br>
+        <div>
+            <Image style={{ maxHeight: '30rem' }} fluid src={imgWomo} alt="Technische Daten" />
             <Row>
-                <br></br>
+                <Col>
+                    <ListGroup>
+                        <ListGroup.Item active>Fahrzeug-Daten</ListGroup.Item>
+                        {specs.map(({ attribute, value, unit }, index) =>
+                            <ListGroup.Item key={index}>
+                                <Row>
+                                    <Col>
+                                        <span className="float-right mr1">{attribute}</span>
+                                    </Col>
+                                    <Col>
+                                        <span className="float-left ml1">{value}</span>
+                                    </Col>
+                                </Row>
+                            </ListGroup.Item>
+                        )}
+                    </ListGroup>
+                </Col>
             </Row>
-            <Row>
-                <Col lg="3" md="6" ><span class="font-weight-bold">Baujahr</span></Col>
-                <Col lg="3" md="6"><span >2018</span></Col>
-                <Col lg="3" md="6"><span class="font-weight-bold">Typ</span></Col>
-                <Col lg="3" md="6"><span>Teilintegriert</span></Col>
-            </Row>
-            <Row>
-                <Col lg="3" md="6"><span class="font-weight-bold">Zulässiges Gesamtgewicht</span></Col>
-                <Col lg="3" md="6"><span>3500</span></Col>
-                <Col lg="3" md="6"><span class="font-weight-bold">Führerscheinklasse</span></Col>
-                <Col lg="3" md="6"><span>3</span></Col>
-            </Row>
-            <Row>
-                <Col lg="3" md="6"><span class="font-weight-bold">Schlafplätze</span></Col>
-                <Col lg="3" md="6"><span >3</span></Col>
-                <Col lg="3" md="6"><span class="font-weight-bold">Leistung (PS)</span></Col>
-                <Col lg="3" md="6"><span class="ng-star-inserted">163</span></Col>
-            </Row>
-
         </div>)
 }

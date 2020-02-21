@@ -1,6 +1,8 @@
 import React from 'react';
 
 import axios from "axios";
+ 
+import {ToastContainer, toast} from "react-toastify"
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -28,17 +30,16 @@ class ContactUs extends React.Component {
       phone  : this.state.phone,
       name : this.state.name
     }).then((res)=>{
-      debugger;
-      console.log(res);
+      //toast.success("Ihre Anfrage ist eingegangen.")
     }).catch((e)=>{
-      debugger;
-      alert(e);
+      //toast.error("Beim Versenden ihrer Anfrage ist ein Fehler aufgetreten. /nBitte kontaktieren sie uns telefonisch.")
     })
   }
 
   render() {
     return (
       <section className="page-section" id="contact">
+        {/* <ToastContainer/> */}
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
