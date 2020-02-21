@@ -1,8 +1,13 @@
 import React from 'react'
-import { Row, Col, ListGroup } from "react-bootstrap"
+import { Row, Col, ListGroup, Image } from "react-bootstrap"
+
+import imgEquipment from "../../assets/img/AusstattungModal.png"
 
 export default (props) => {
-  return (<Row>
+  return (
+  <div>
+    <Image style={{maxWidth : '64%'}} fluid src={imgEquipment} alt="Ausstattung"/>
+    <Row>
     <Col>
       <ListGroup>
         <ListGroup.Item active>Technik</ListGroup.Item>
@@ -23,5 +28,6 @@ export default (props) => {
         <ListGroup.Item>Eimer und Wasserschlauch</ListGroup.Item>
       </ListGroup>
     </Col>
-  </Row>)
+  </Row>
+  </div>)
 }

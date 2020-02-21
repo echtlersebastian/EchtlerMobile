@@ -24,12 +24,8 @@ function App() {
        },
        {
         title: 'Im Wohnmobil enthalten',
-        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' ,
-<<<<<<< HEAD
-        content : <WohnmobilModal></WohnmobilModal>
-=======
+        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten',
         content : <AustattungsDetails/>
->>>>>>> 8a7264dbeb2f8ea41379e8c17aa6b5cbb8c41bbd
        },
        {
         title: 'Urlaubs Inspiration',
