@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './assets/css/bootstrap.min.css';
 import './assets/css/agency.css';
@@ -8,11 +7,8 @@ import Service from './components/Service';
 import Navbar from './components/Navbar';
 import Masterhead from './components/Masterhead';
 import HowToBuyElements from './components/HowToBuyElements/HowToBuy';
-import WohnmobilModal from './components/Modlas/WohnmobilModal';
-import NewModal from './components/Modlas/NewModal';
-import AustattungsModal from './components/Modlas/AusstattungsModal';
-import Team from './components/Team';
-import BottomPictures from './components/BottomPictures';
+import WohnmobilDetails from './components/Modlas/WohnmobilDetails';
+import AustattungsDetails from './components/Modlas/AusstattungsDetails';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import PortfolioModal from './components/PortfolioModal';
@@ -24,12 +20,12 @@ function App() {
       {
         title: 'Unsere Wohnmobile',
         caption: 'Schauen Sie sich unsere Wohnmobile an!',
-        content : <NewModal></NewModal>
+        content : <WohnmobilDetails/>
        },
        {
         title: 'Im Wohnmobil enthalten',
         caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten' ,
-        content : <AustattungsModal></AustattungsModal>
+        content : <AustattungsDetails/>
        },
        {
         title: 'Urlaubs Inspiration',
