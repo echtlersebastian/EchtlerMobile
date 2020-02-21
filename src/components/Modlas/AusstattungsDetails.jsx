@@ -30,6 +30,8 @@ export default () => {
         <ListGroup.Item>Zwei Einzelbetten (200 x 80 cm und 190 x 80 cm)</ListGroup.Item>
         <ListGroup.Item>Eimer und Wasserschlauch</ListGroup.Item>
         <ListGroup.Item>Markise und Fahrradträger</ListGroup.Item>
+        <ListGroup.Item>Frischwasser-Tank mit 122 l Fassungsvermögen</ListGroup.Item>
+        <ListGroup.Item>Abwasser-Tank mit 92 l Fassungsvermögen</ListGroup.Item>
       </ListGroup>
     </Col>
   </Row>

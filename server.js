@@ -19,7 +19,7 @@ app.get("/", (req,res)=>{
 
 // Accept POST for mailing
 app.post("/contactus", (req, resp)=>{
-
+    console.log("asdasd")
     const message = req.body.message;
     const sender = req.body.sender;
     const name = req.body.name

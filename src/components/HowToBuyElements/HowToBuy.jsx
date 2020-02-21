@@ -43,15 +43,10 @@ class TimeLine extends React.Component {
           </div>
           <div className="row">
             <div className="col-lg-12">
-              <ul className="timeline">
-
-                {/* {this.renderTimeLine()} */}
-                {/* {  this.props.timeLineItems.map((item, index)=>
-                 
-                )} */}
+              <ul className="timeline">            
                 {
                   this.props.timeLineItems.map((item, index) =>
-                    index % 2 === 0 ? <TimeLinePannel key={index} title={item.title} subheading={item.subheading} caption={item.caption} imgUrl={item.imgUrl} /> : <TimeLineInverted title={item.title} subheading={item.subheading} caption={item.caption} imgUrl={item.imgUrl} />                 )}
+                    index % 2 === 0 ? <TimeLinePannel key={index} title={item.title} subheading={item.subheading} caption={item.caption} imgUrl={item.imgUrl} /> : <TimeLineInverted key={index} title={item.title} subheading={item.subheading} caption={item.caption} imgUrl={item.imgUrl} />                 )}
 
                 <li className="timeline-inverted">
                   <div className="timeline-image">

@@ -23,7 +23,7 @@ export default (props) => {
           <ListGroup>
             <ListGroup.Item active>Zubuchbare Optionen für ihre perfekte Reise</ListGroup.Item>
             {optionals.map(({ label, price }, index) =>
-              <ListGroup.Item>
+              <ListGroup.Item key={index}>
                 <Row>
                   <Col>
                     <span className="float-right mr1">{label}</span>
