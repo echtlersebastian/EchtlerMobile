@@ -12,70 +12,65 @@ class TimeLine extends React.Component {
     };
     this.renderTimeLine = this.renderTimeLine.bind(this);
   }
-  renderTimeLine(){
+  renderTimeLine() {
     let timeLine;
     var counter = 0;
 
 
-const result = this.state.timeLineItems.map(({ title, subheading, caption, imgUrl }) =>
- {
-    if ((counter % 2) === 1){   
-      this.counter = this.counter +1;
-      return <TimeLineInverted title = {title} subheading = {subheading} caption = {caption} imgUrl = {imgUrl}></TimeLineInverted>
-  }
-  else
-  {
-    this.counter = this.counter +1;
-    return <TimeLinePannel  title = {title} subheading = {subheading} caption = {caption} imgUrl = {imgUrl}></TimeLinePannel>
-  }
-});
-debugger;
-console.log(result);
-return result;
+    const result = this.state.timeLineItems.map(({ title, subheading, caption, imgUrl }, index) => {
+      if ((counter % 2) === 1) {
+        this.counter = this.counter + 1;
+        return <TimeLineInverted key={index} title={title} subheading={subheading} caption={caption} imgUrl={imgUrl}></TimeLineInverted>
+      }
+      else {
+        this.counter = this.counter + 1;
+        return <TimeLinePannel key={index} title={title} subheading={subheading} caption={caption} imgUrl={imgUrl}></TimeLinePannel>
+      }
+    });
+    debugger;
+    console.log(result);
+    return result;
 
-};
+  };
 
-render (){
-return(
-    <section className="page-section" id="about">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 text-center">
-          <h2 className="section-heading text-uppercase">Ihr Weg zum Urlaub im Wohnmobil</h2>
-          <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <ul className="timeline">
-            
-              {/* {this.renderTimeLine()} */}
-              {/* {  this.props.timeLineItems.map((item, index)=>
+  render() {
+    return (
+      <section className="page-section" id="about">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h2 className="section-heading text-uppercase">Ihr Weg zum Urlaub im Wohnmobil</h2>
+              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-12">
+              <ul className="timeline">
+
+                {/* {this.renderTimeLine()} */}
+                {/* {  this.props.timeLineItems.map((item, index)=>
                  
                 )} */}
-                {  
-                this.props.timeLineItems.map((item, index) => 
-                    index % 2 === 0 ? <TimeLinePannel title = {item.title} subheading = {item.subheading} caption = {item.caption} imgUrl = {item.imgUrl}/> : <TimeLineInverted title = {item.title} subheading = {item.subheading} caption = {item.caption} imgUrl = {item.imgUrl}/>
-                
-                  
-                )}
-            
-            <li className="timeline-inverted">
-              <div className="timeline-image">
-                <h4>Be Part
-                  <br/>Of Our
-                  <br/>Story!</h4>
-              </div>
-            </li>
-          </ul>
+                {
+                  this.props.timeLineItems.map((item, index) =>
+                    index % 2 === 0 ? <TimeLinePannel key={index} title={item.title} subheading={item.subheading} caption={item.caption} imgUrl={item.imgUrl} /> : <TimeLineInverted title={item.title} subheading={item.subheading} caption={item.caption} imgUrl={item.imgUrl} />                 )}
+
+                <li className="timeline-inverted">
+                  <div className="timeline-image">
+                    <h4>Be Part
+                  <br />Of Our
+                  <br />Story!</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-)
+    )
 
-};
+  };
 };
 
 export default TimeLine;
