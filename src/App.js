@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './assets/css/bootstrap.min.css';
 import './assets/css/agency.css';
+import 'react-toastify/dist/ReactToastify.css';
 import Portfolio from './components/Portfolio';
 import Service from './components/Service';
 import Navbar from './components/Navbar';
@@ -114,7 +115,7 @@ function App() {
 
   return (
     <div>
-
+        <ToastContainer/>
         <Navbar></Navbar>    
         <Masterhead></Masterhead>
         <Service serviceLinks = {serviceLinks}></Service>
@@ -123,7 +124,7 @@ function App() {
         <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>
     
         <ContactUs></ContactUs>
-        <ToastContainer/>
+        
         <Footer></Footer>
         
     </div>

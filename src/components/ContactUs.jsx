@@ -2,7 +2,7 @@ import React from 'react';
 
 import axios from "axios";
  
-import {ToastContainer, toast} from "react-toastify"
+import {toast} from "react-toastify"
 
 class ContactUs extends React.Component {
   constructor(props) {
@@ -30,16 +30,23 @@ class ContactUs extends React.Component {
       phone  : this.state.phone,
       name : this.state.name
     }).then((res)=>{
-      //toast.success("Ihre Anfrage ist eingegangen.")
+      toast.success("Ihre Anfrage ist eingegangen.", { 
+        position : toast.POSITION.BOTTOM_CENTER 
+      });
     }).catch((e)=>{
-      //toast.error("Beim Versenden ihrer Anfrage ist ein Fehler aufgetreten. /nBitte kontaktieren sie uns telefonisch.")
+
+      const errorMessage = <div><span>Beim Versenden ihrer Anfrage ist ein Fehler aufgetreten.</span>
+      <br/><span>Bitte kontaktieren sie uns telefonisch.</span></div>;
+
+      toast.error(errorMessage, { 
+        position : toast.POSITION.BOTTOM_CENTER 
+      });
     })
   }
 
   render() {
     return (
       <section className="page-section" id="contact">
-        {/* <ToastContainer/> */}
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
