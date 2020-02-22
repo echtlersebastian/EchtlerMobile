@@ -70,45 +70,51 @@ function App() {
     
     const TimeLineItems = [
       {
-        title: 'Mir hätten da was zum anbieten für Sie.',
-        subheading: 'subheading',
-        caption: 'Wennses kaufn mögts, dann klingts halt vorne.',
+        title: 'Na, haben Sie nun Lust zu campen?',
+        subheading: 'Freiheit – Unabhängigkeit - Abenteuer',
+        caption: 'Mit Echtler Mobile in wenigen Schritten czum Traumurlaub!',
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
-        title: 'Title2',
-        subheading: 'subheading',
-        caption: 'Caption2', 
+        title: 'Kontaktieren Sie uns!',
+        subheading: 'Wir schicken Ihnen ein Angebot.',
+        caption: 'Schicken Sie uns eine E-Mail, rufen Sie uns an oder füllen Sie das Anfrageformular aus!', 
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
-        title: 'Title3',
-        subheading: 'subheading',
-        caption: 'Caption3',
+        title: 'Komplettpaket bei Echtler- Mobile!',
+        subheading: 'Großes Angebot an Ausstattung',
+        caption: 'Fehlt Ihnen noch etwas? Gerne können Sie es über die Extras dazubuchen. ',
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
-        title: 'Title4',
-        subheading: 'subheading',
-        caption: 'Caption4',
+        title: 'Fragen?',
+        subheading: 'Wenden Sie sich gerne an uns!',
+        caption: 'Durch jahrelange Campingerfahrung können wir Sie in allen Belangen unterstützen.',
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
-        title: 'Title5',
-        subheading: 'subheading',
-        caption: 'Caption3',
+        title: 'Abholung des Wohnmobils zum vereinbarten Termin',
+        subheading: 'Detaillierte Einweisung in alle Bereiche',
+        caption: 'Somit bekommen Sie Sicherheit für ihre Reise',
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
-        title: 'Title6',
-        subheading: 'subheading',
-        caption: 'Caption4',
+        title: 'Jetzt beginnt Ihre Reise!',
+        subheading: 'Strand, Stadt oder Berge?',
+        caption: 'Mit unseren Wohnmobilen stehen Ihnen alle Möglichkeiten offen. ',
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
-        title: 'Rückgabe',
-        subheading: 'Geben sie ihr wohnmobil unkompliziert zurück',
-        caption: 'Wenn sie aus dem Urlaub wieder daheim sind, dann können sie ganz einfach bei uns vorbeikommen und das Wohnmobil wieder abgeben.',
+        title: 'Rückgabe des Wohnmobils zum vereinbarten Termin',
+        subheading: 'Die Abnahme erfolgt unkompliziert und professionell.',
+        caption: 'Haben sie keine Lust auf eine Endreinigung? - Wir übernehmen das gerne für Sie!',
+        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+       },
+       {
+        title: 'Hat Ihnen unser Service gefallen?',
+        subheading: '',
+        caption: 'Bitte hinterlassen Sie uns eine Google Bewertung.',
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        }
     ]

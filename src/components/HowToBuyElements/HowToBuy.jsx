@@ -50,9 +50,9 @@ class TimeLine extends React.Component {
 
                 <li className="timeline-inverted">
                   <div className="timeline-image">
-                    <h4>Be Part
-                  <br/>Of Our
-                  <br/>Story!</h4>
+                    <h4>Echtler- Mobile wünscht eine
+                      <br/> gute Reise und einen <br/>erholsamen Urlaub!
+                 </h4>
                   </div>
                 </li>
               </ul>
