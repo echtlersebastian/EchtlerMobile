@@ -37,8 +37,8 @@ class TimeLine extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Ihr Weg zum Urlaub im Wohnmobil</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h2 className="section-heading text-uppercase">Losgelöst von Zeit und Raum ist Erholung sicher</h2>
+              <h3 className="section-subheading text-muted">Ihr persönlicher Weg zum Wohnmobil mit Echtler-Mobile:</h3>
             </div>
           </div>
           <div className="row">
@@ -50,9 +50,7 @@ class TimeLine extends React.Component {
 
                 <li className="timeline-inverted">
                   <div className="timeline-image">
-                    <h4>Echtler- Mobile wünscht eine
-                      <br/> gute Reise und einen <br/>erholsamen Urlaub!
-                 </h4>
+                    <h4>Echtler- Mobile wünscht eine gute Reise! </h4>
                   </div>
                 </li>
               </ul>

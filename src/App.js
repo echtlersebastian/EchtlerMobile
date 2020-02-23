@@ -111,7 +111,7 @@ function App() {
        {
         title: 'Komplettpaket bei Echtler-Mobile!',
         subheading: 'Großes Angebot an Ausstattung',
-        caption: 'Fehlt Ihnen noch etwas? Gerne können Sie es über die Extras dazubuchen. ',
+        caption: 'Fehlt Ihnen noch etwas? Sprechen Sie mit uns und Sie können gerne Extras dazubuchen. ',
         imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {

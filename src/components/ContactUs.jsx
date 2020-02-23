@@ -51,8 +51,8 @@ class ContactUs extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Contact Us</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h2 className="section-heading text-uppercase">Kontaktieren Sie uns unverbindlich hier</h2>
+              <h3 className="section-subheading text-white">Wir melden uns dann schnellstmöglich bei Ihnen</h3>
             </div>
           </div>
           <div className="row">
@@ -61,28 +61,28 @@ class ContactUs extends React.Component {
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
-                      <input className="form-control" name="name" id="name" type="text" onChange={this.onChange} placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name."></input>
+                      <input className="form-control" name="name" id="name" type="text" onChange={this.onChange} placeholder="Vorname Nachname" required="required" data-validation-required-message="Please enter your name."></input>
                       <p className="help-block text-danger"></p>
                     </div>
                     <div className="form-group">
-                      <input className="form-control" name="address" id="email" type="email" onChange={this.onChange} placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address."></input>
+                      <input className="form-control" name="address" id="email" type="email" onChange={this.onChange} placeholder="E-Mail Adresse" required="required" data-validation-required-message="Please enter your email address."></input>
                       <p className="help-block text-danger"></p>
                     </div>
                     <div className="form-group">
-                      <input className="form-control" name="phone" id="phone" type="tel" onChange={this.onChange} placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number."></input>
+                      <input className="form-control" name="phone" id="phone" type="tel" onChange={this.onChange} placeholder="Telefonnummer" required="required" data-validation-required-message="Please enter your phone number."></input>
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="form-group">
-                      <textarea className="form-control" name="message" id="message" onChange={this.onChange} placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                      <textarea className="form-control" name="message" id="message" onChange={this.onChange} placeholder="Ihre Nachricht an uns" required="required" data-validation-required-message="Please enter a message."></textarea>
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
                   <div className="clearfix"></div>
                   <div className="col-lg-12 text-center">
                     <div id="success"></div>
-                    <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="button" onClick={this.onSubmit}>Send Message</button>
+                    <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="button" onClick={this.onSubmit}>Anfrage jetzt abschicken</button>
                   </div>
                 </div>
               </form>
