@@ -27,23 +27,23 @@ function App() {
         content : <WohnmobilDetails/>
        },
        {
-        title: 'Im Wohnmobil enthalten',
-        caption: 'Alles was Sie brauchen ist bei uns im Preis enthalten.',
+        title: 'Ausstattung',
+        caption: 'Vieles was Sie brauchen ist bei uns im Preis enthalten.',
         content : <AustattungsDetails/>
        },
        {
-        title: 'Zubuchbare Extras',
+        title: 'Mögliche Extras',
         caption: 'Bei uns bleiben keine Wünsche offen.',
         content : <ExtrasDetails/>
        },
        {
-        title: 'Vertragsbedingungen',
-        caption: 'Hier finde sie eine zusammengefaste Übersicht unserer Vertragsbedingungen',
+        title: 'Packliste',
+        caption: 'Damit sie nichts vergessen',
         content : "content4"
        },
        {
-        title: 'Preisliste',
-        caption: 'aktuelle Preise für das Jahr 2020',
+        title: 'Preisliste 2020',
+        caption: 'Unser aktuelles Angebot für sie!',
         content : <PortfolioModal></PortfolioModal>
        },
        {
@@ -55,16 +55,28 @@ function App() {
 
     const serviceLinks = [
       {
-        title: 'Mir hätten da was zum anbieten für Sie.',
-        caption: 'Wennses kaufn mögts, dann klingts halt vorne.' 
+        title: 'Es gibt nichts schöneres als freie Zeit so zu erleben!',
+        caption: '' 
        },
        {
-        title: 'Title2',
-        caption: 'Caption2' 
+        title: 'Brotzeit machen, wo immer man will.',
+        caption: '' 
        },
        {
-        title: 'Title3',
-        caption: 'Caption3' 
+        title: 'Wild, oder gepflegt am Campingplatz wohnen.',
+        caption: '' 
+       },
+       {
+        title: 'Städtereisen',
+        caption: '' 
+       },
+       {
+        title: 'Bergfahrten',
+        caption: '' 
+       },
+       {
+        title: 'Familienurlaub am Meer',
+        caption: '' 
        }
     ]
     
@@ -73,37 +85,37 @@ function App() {
         title: 'Na, haben Sie nun Lust zu campen?',
         subheading: 'Freiheit – Unabhängigkeit - Abenteuer',
         caption: 'Mit Echtler Mobile in wenigen Schritten czum Traumurlaub!',
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Kontaktieren Sie uns!',
         subheading: 'Wir schicken Ihnen ein Angebot.',
         caption: 'Schicken Sie uns eine E-Mail, rufen Sie uns an oder füllen Sie das Anfrageformular aus!', 
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Komplettpaket bei Echtler- Mobile!',
         subheading: 'Großes Angebot an Ausstattung',
         caption: 'Fehlt Ihnen noch etwas? Gerne können Sie es über die Extras dazubuchen. ',
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Fragen?',
         subheading: 'Wenden Sie sich gerne an uns!',
         caption: 'Durch jahrelange Campingerfahrung können wir Sie in allen Belangen unterstützen.',
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Abholung des Wohnmobils zum vereinbarten Termin',
         subheading: 'Detaillierte Einweisung in alle Bereiche',
         caption: 'Somit bekommen Sie Sicherheit für ihre Reise',
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Jetzt beginnt Ihre Reise!',
         subheading: 'Strand, Stadt oder Berge?',
         caption: 'Mit unseren Wohnmobilen stehen Ihnen alle Möglichkeiten offen. ',
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Rückgabe des Wohnmobils zum vereinbarten Termin',

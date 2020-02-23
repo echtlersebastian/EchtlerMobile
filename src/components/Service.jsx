@@ -7,8 +7,8 @@ return(
       <div className="container">
         <div className="row">
           <div className="col-lg-12 text-center">
-            <h2 className="section-heading text-uppercase">User Service</h2>
-            <h3 className="section-subheading text-muted">Mit dem Wohnmobil auf neuen Wegen.</h3>
+            <h2 className="section-heading text-uppercase">Sommer, Sonne, Meer</h2>
+            <h3 className="section-subheading text-muted">Abenteuer und Freiheit - Mit dem Wohnmobil auf neuen Wegen.</h3>
           </div>
         </div>
 
