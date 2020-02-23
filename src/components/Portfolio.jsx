@@ -35,7 +35,7 @@ class Portfolio extends React.Component {
                                                 <i className="fa fa-plus fa-3x"></i>
                                             </div>
                                         </div>
-                                        <img className="img-fluid" src={`https://unsplash.it/350/350/?${Math.floor(Math.random(0, 100) * 100)}`} alt="portfolio_img" />
+                                        <img className="img-fluid" src={item.image} alt="portfolio_img" />
                                     </div>
                                     <div className="portfolio-caption">
                                         <h4>{item.title}</h4>

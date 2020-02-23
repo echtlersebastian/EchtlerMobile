@@ -7,7 +7,7 @@ export default ({ title, subheading, caption, imgUrl }) => {
         <div className="timeline-panel">
             <div className="timeline-heading">
                 <h4>{title}</h4>
-                <h4 className="subheading">{subheading}</h4>
+                <h6 className="subheading">{subheading}</h6>
             </div>
             <div className="timeline-body">
                 <p className="text-muted">{caption}</p>

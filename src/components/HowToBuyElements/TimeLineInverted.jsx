@@ -11,7 +11,7 @@ class TimeLineInverted extends React.Component{
                 <div className="timeline-panel">
                     <div className="timeline-heading">
                         <h4>{this.props.title}</h4>
-                        <h4 className="subheading">{this.props.subheading}</h4>
+                        <h6 className="subheading">{this.props.subheading}</h6>
                     </div>
                     <div className="timeline-body">
                         <p className="text-muted">{this.props.caption}</p>

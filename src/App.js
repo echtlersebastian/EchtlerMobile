@@ -15,6 +15,15 @@ import Footer from './components/Footer';
 import PortfolioModal from './components/PortfolioModal';
 import ExtrasDetails from "./components/Modlas/ExtrasDetails"
 import {ToastContainer, toast} from "react-toastify";
+import Preisliste from './components/Modlas/Preisliste';
+import AgbModal from './components/Modlas/AGBModal';
+import PacklisteModal from './components/Modlas/PacklisteDetails';
+import WohnmobilPortfolioBild from './assets/img/ModalPictures/Wohnmobil.png'
+import AusstattungPortfolioBild from './assets/img/ModalPictures/Ausstattung.png'
+import ExtrasPortfolioBild from './assets/img/ModalPictures/Extras.png'
+import PacklistePortfolioBild from './assets/img/ModalPictures/Packliste.png'
+import PreislistePortfolioBild from './assets/img/ModalPictures/Preisliste.png'
+import AGBPortfolioBild from './assets/img/ModalPictures/AGB.png'
 
 
 function App() {
@@ -24,32 +33,38 @@ function App() {
       {
         title: 'Unsere Wohnmobile',
         caption: 'Schauen Sie sich hier unsere Wohnmobile an.',
+        image: WohnmobilPortfolioBild,
         content : <WohnmobilDetails/>
        },
        {
         title: 'Ausstattung',
         caption: 'Vieles was Sie brauchen ist bei uns im Preis enthalten.',
+        image: AusstattungPortfolioBild,
         content : <AustattungsDetails/>
        },
        {
         title: 'Mögliche Extras',
         caption: 'Bei uns bleiben keine Wünsche offen.',
+        image: ExtrasPortfolioBild,
         content : <ExtrasDetails/>
        },
        {
         title: 'Packliste',
         caption: 'Damit sie nichts vergessen',
-        content : "content4"
+        image: PacklistePortfolioBild,
+        content : <PacklisteModal></PacklisteModal>
        },
        {
         title: 'Preisliste 2020',
         caption: 'Unser aktuelles Angebot für sie!',
-        content : <PortfolioModal></PortfolioModal>
+        image: PreislistePortfolioBild,
+        content : <Preisliste></Preisliste>
        },
        {
         title: 'AGB',
         caption: 'Unsere Vertragsbedingungen',
-        content : <img className="img-fluid" src={`https://unsplash.it/600/600/?${Math.floor(Math.random(0,100) * 100)}`}></img>
+        image: AGBPortfolioBild,
+        content : <AgbModal></AgbModal>
        }
     ]
 
@@ -84,17 +99,17 @@ function App() {
       {
         title: 'Na, haben Sie nun Lust zu campen?',
         subheading: 'Freiheit – Unabhängigkeit - Abenteuer',
-        caption: 'Mit Echtler Mobile in wenigen Schritten czum Traumurlaub!',
+        caption: 'Mit Echtler Mobile in wenigen Schritten zum Traumurlaub!',
         imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Kontaktieren Sie uns!',
         subheading: 'Wir schicken Ihnen ein Angebot.',
-        caption: 'Schicken Sie uns eine E-Mail, rufen Sie uns an oder füllen Sie das Anfrageformular aus!', 
+        caption: 'Schicken Sie uns eine E-Mail, rufen Sie uns an oder füllen Sie unten das Anfrageformular aus!', 
         imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
-        title: 'Komplettpaket bei Echtler- Mobile!',
+        title: 'Komplettpaket bei Echtler-Mobile!',
         subheading: 'Großes Angebot an Ausstattung',
         caption: 'Fehlt Ihnen noch etwas? Gerne können Sie es über die Extras dazubuchen. ',
         imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
@@ -126,7 +141,7 @@ function App() {
        {
         title: 'Hat Ihnen unser Service gefallen?',
         subheading: '',
-        caption: 'Bitte hinterlassen Sie uns eine Google Bewertung.',
+        caption: 'Bitte hinterlassen Sie uns eine Bewertung bei Google.',
         imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
        }
     ]
