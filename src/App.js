@@ -71,27 +71,33 @@ function App() {
     const serviceLinks = [
       {
         title: 'Es gibt nichts schöneres als freie Zeit so zu erleben!',
-        caption: '' 
+        caption: '' ,
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Brotzeit machen, wo immer man will.',
-        caption: '' 
+        caption: '' ,
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Wild, oder gepflegt am Campingplatz wohnen.',
-        caption: '' 
+        caption: '' ,
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Städtereisen',
-        caption: '' 
+        caption: ''  ,
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Bergfahrten',
-        caption: '' 
+        caption: '' ,
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {
         title: 'Familienurlaub am Meer',
-        caption: '' 
+        caption: '' ,
+        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        }
     ]
     
@@ -123,7 +129,7 @@ function App() {
        {
         title: 'Abholung des Wohnmobils zum vereinbarten Termin',
         subheading: 'Detaillierte Einweisung in alle Bereiche',
-        caption: 'Somit bekommen Sie Sicherheit für ihre Reise',
+        caption: 'Somit bekommen Sie Sicherheit für Ihre Reise',
         imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
        },
        {

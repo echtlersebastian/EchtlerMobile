@@ -38,7 +38,7 @@ class TimeLine extends React.Component {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2 className="section-heading text-uppercase">Losgelöst von Zeit und Raum ist Erholung sicher</h2>
-              <h3 className="section-subheading text-muted">Ihr persönlicher Weg zum Wohnmobil mit Echtler-Mobile:</h3>
+              <h3 className="section-subheading text-muted">Ihr persönlicher Weg zum Wohnmobil mit Echtler-Mobile</h3>
             </div>
           </div>
           <div className="row">

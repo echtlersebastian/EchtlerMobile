@@ -14,6 +14,7 @@ return(
     
     <div className= "logo1">
           </div>
+      
             <div className="intro-text">
          
             {/*<div className="intro-heading text-uppercase">Mit dem Wohnmobil auf neuen Wegen!</div>*/}
