@@ -25,7 +25,7 @@ export default () => {
     <Col>
       <ListGroup>
         <ListGroup.Item active>Innenausstattung</ListGroup.Item>      
-        <ListGroup.Item>Inklusive zwei Stühlen und einem Tisch</ListGroup.Item>
+        <ListGroup.Item>Inklusive zwei Stühle und ein Tisch</ListGroup.Item>
         <ListGroup.Item>Vollständiges Geschirrset</ListGroup.Item>
         <ListGroup.Item>Hubbett (2 Pers.) 195 x 140 cm </ListGroup.Item>
         <ListGroup.Item>Zwei Einzelbetten (200 x 80 cm und 190 x 80 cm)</ListGroup.Item>

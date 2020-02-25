@@ -1,13 +1,16 @@
 import React from 'react'
-
+import { Row } from "react-bootstrap"
 export default () => {
 return(    
 <footer className="footer" id="footer">
 <div className="container">
+  <Row>
   <div className="row align-items-center">
 
     <div className="col-md-4 copyright">
-      <span>Telefon: +49 (0) 8341 9969353</span>
+      <br></br>
+      <br></br>
+      <span>Telefon: +49 (0) 8341 9969535</span>
       <br></br>
       <span>E-Mail: <a href="mailto:info@Echtler-Mobile.de">info@Echtler-Mobile.de</a></span>
       <br></br>
@@ -15,20 +18,21 @@ return(
     </div>
 
     <div className="col-md-4 copyright">
-      <span>Impressum:</span>
+      <h3>Impressum:</h3>
       <br></br>
-      <span>Echtler-Mobile</span>
-      <br></br>
-      <span>Wohnmobilvermietung und KFZ-Handel</span>
+      <h5>Echtler-Mobile</h5>
+      <span>Handel und Vermietung von Wohnmobilen, Caravan und KFZ</span>
       <br></br>
       <span>Inhaber: Manfred Echtler</span>
       <br></br>
-      <span>Frankenrieder Str. 19</span>
+      <span>Osterhofstraße 3</span>
       <br></br>
       <span>87600 Kaufbeuren</span>
     </div>
 
-    <div className="col-md-4 copyright">
+    <div className="col-md-4 copyright"><br></br>
+      <br></br>
+      
       <span className="streitbeilegung">Wir sind nicht bereit und nicht verpflichtet an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</span>
     </div>
  
@@ -62,6 +66,7 @@ return(
       </ul>
     </div>*/}
   </div>
+  </Row>
 </div>
 </footer>
 )

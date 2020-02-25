@@ -171,8 +171,8 @@ function App() {
         <ToastContainer/>
         <Navbar></Navbar>    
         <Masterhead></Masterhead>
-        <Service serviceLinks = {serviceLinks}></Service>
         <Portfolio portfolioLinks = {portfolioLinks}></Portfolio>
+        <Service serviceLinks = {serviceLinks}></Service>
           
         <HowToBuyElements timeLineItems = {TimeLineItems}></HowToBuyElements>
     
