@@ -36,7 +36,7 @@ export default () => {
 <ListGroup.Item>Badeschlappen</ListGroup.Item>
 <ListGroup.Item>Duschtasche</ListGroup.Item>
 <ListGroup.Item>Tempos</ListGroup.Item>
-<ListGroup.Item>Klo-Papier (2-lagig)</ListGroup.Item>
+<ListGroup.Item>Klo-Papier</ListGroup.Item>
 <ListGroup.Item>Shampoo / Spülung</ListGroup.Item>
 <ListGroup.Item>Creme</ListGroup.Item>
 <ListGroup.Item>Sonnencreme</ListGroup.Item>
@@ -55,7 +55,7 @@ export default () => {
 <ListGroup.Item>Hose kurz</ListGroup.Item>
 <ListGroup.Item>Kleid</ListGroup.Item>
 <ListGroup.Item>Hemd</ListGroup.Item>
-<ListGroup.Item>Pulli,</ListGroup.Item>
+<ListGroup.Item>Pulli</ListGroup.Item>
 <ListGroup.Item>Top</ListGroup.Item>
 <ListGroup.Item>T-Shirt</ListGroup.Item>
 <ListGroup.Item>Unterwäsche</ListGroup.Item>
@@ -95,9 +95,9 @@ export default () => {
 <ListGroup.Item>Taucherbrille/Schnorchel</ListGroup.Item>
 <ListGroup.Item>Luftmatratze</ListGroup.Item>
 <ListGroup.Item>Sonnenhut/Mütze</ListGroup.Item>
-<ListGroup.Item>Ball / Federball</ListGroup.Item>
+<ListGroup.Item>Ball/Federball</ListGroup.Item>
 <ListGroup.Item>Sandspielzeug</ListGroup.Item>
-<ListGroup.Item>Schaufel </ListGroup.Item>
+<ListGroup.Item>Schaufel</ListGroup.Item>
       </ListGroup>
     </Col>
     <Col>
