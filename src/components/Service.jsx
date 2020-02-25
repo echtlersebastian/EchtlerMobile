@@ -28,7 +28,7 @@ return(
         </span>*/}
         </div>
             <h4 className="service-heading">{ title }</h4>
-            <p className="text-muted">{ caption }</p>
+            <h4 className="text-muted">{ caption }</h4>
           </div>)
         }
 

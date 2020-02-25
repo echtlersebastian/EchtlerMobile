@@ -24,6 +24,20 @@ import ExtrasPortfolioBild from './assets/img/ModalPictures/Extras.png'
 import PacklistePortfolioBild from './assets/img/ModalPictures/Packliste.png'
 import PreislistePortfolioBild from './assets/img/ModalPictures/Preisliste.png'
 import AGBPortfolioBild from './assets/img/ModalPictures/AGB.png'
+import BergreiseImg from './assets/img/Portfolio/Bergreise300x300.png'
+import FreiImg from './assets/img/Portfolio/Frei300x300.png'
+import StaedtereiseImg from './assets/img/Portfolio/Stadtereise300x300.png'
+import StrandurlaubImg from './assets/img/Portfolio/Strandurlaub300x300.png'
+import UrlaubImg from './assets/img/Portfolio/Urlaub300x300.png'
+import WildCampenImg from './assets/img/Portfolio/WildCampen300x300.png'
+import TimeLine1Img from './assets/img/TimeLine/1.png'
+import TimeLine2Img from './assets/img/TimeLine/2.png'
+import TimeLine3Img from './assets/img/TimeLine/3.png'
+import TimeLine4Img from './assets/img/TimeLine/4.png'
+import TimeLine5Img from './assets/img/TimeLine/5.png'
+import TimeLine6Img from './assets/img/TimeLine/6.png'
+import TimeLine7Img from './assets/img/TimeLine/7.png'
+import TimeLine8Img from './assets/img/TimeLine/8.png'
 
 
 function App() {
@@ -70,34 +84,34 @@ function App() {
 
     const serviceLinks = [
       {
-        title: 'Es gibt nichts schöneres als freie Zeit so zu erleben!',
-        caption: '' ,
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        title: 'Freie Zeit?',
+        caption: 'Genießen Sie Ihren Urlaub mit Echtler-Mobile' ,
+        imgUrl: UrlaubImg
        },
        {
-        title: 'Brotzeit machen, wo immer man will.',
-        caption: '' ,
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        title: 'Freiheit',
+        caption: 'Egal wann, egal wohin' ,
+        imgUrl: FreiImg
        },
        {
-        title: 'Wild, oder gepflegt am Campingplatz wohnen.',
-        caption: '' ,
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        title: 'Ihre Entscheidung',
+        caption: 'Wild, oder gepflegt am Campingplatz wohnen.' ,
+        imgUrl: WildCampenImg
        },
        {
         title: 'Städtereisen',
         caption: ''  ,
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: StaedtereiseImg
        },
        {
         title: 'Bergfahrten',
         caption: '' ,
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: BergreiseImg
        },
        {
         title: 'Familienurlaub am Meer',
         caption: '' ,
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: StrandurlaubImg
        }
     ]
     
@@ -106,49 +120,49 @@ function App() {
         title: 'Na, haben Sie nun Lust zu campen?',
         subheading: 'Freiheit – Unabhängigkeit - Abenteuer',
         caption: 'Mit Echtler Mobile in wenigen Schritten zum Traumurlaub!',
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: TimeLine1Img
        },
        {
         title: 'Kontaktieren Sie uns!',
         subheading: 'Wir schicken Ihnen ein Angebot.',
         caption: 'Schicken Sie uns eine E-Mail, rufen Sie uns an oder füllen Sie unten das Anfrageformular aus!', 
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: TimeLine2Img
        },
        {
         title: 'Komplettpaket bei Echtler-Mobile!',
         subheading: 'Großes Angebot an Ausstattung',
         caption: 'Fehlt Ihnen noch etwas? Sprechen Sie mit uns und Sie können gerne Extras dazubuchen. ',
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl:TimeLine3Img
        },
        {
         title: 'Fragen?',
         subheading: 'Wenden Sie sich gerne an uns!',
         caption: 'Durch jahrelange Campingerfahrung können wir Sie in allen Belangen unterstützen.',
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: TimeLine4Img
        },
        {
         title: 'Abholung des Wohnmobils zum vereinbarten Termin',
         subheading: 'Detaillierte Einweisung in alle Bereiche',
         caption: 'Somit bekommen Sie Sicherheit für Ihre Reise',
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: TimeLine5Img
        },
        {
         title: 'Jetzt beginnt Ihre Reise!',
         subheading: 'Strand, Stadt oder Berge?',
         caption: 'Mit unseren Wohnmobilen stehen Ihnen alle Möglichkeiten offen. ',
-        imgUrl: `https://unsplash.it/300/300/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: TimeLine6Img
        },
        {
         title: 'Rückgabe des Wohnmobils zum vereinbarten Termin',
         subheading: 'Die Abnahme erfolgt unkompliziert und professionell.',
-        caption: 'Haben sie keine Lust auf eine Endreinigung? - Wir übernehmen das gerne für Sie!',
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        caption: 'Haben Sie keine Lust auf eine Endreinigung? - Wir übernehmen das gerne für Sie!',
+        imgUrl: TimeLine7Img
        },
        {
         title: 'Hat Ihnen unser Service gefallen?',
         subheading: '',
         caption: 'Bitte hinterlassen Sie uns eine Bewertung bei Google.',
-        imgUrl: `https://unsplash.it/150/150/?${Math.floor(Math.random(0,100) * 100)}`
+        imgUrl: TimeLine8Img
        }
     ]
 

@@ -16,7 +16,7 @@ export default (props) => {
     { label: "Schneeketten", price: 75 },
   ];
   return (
-    <div>
+    <div className = "container">
       <Image style={{ maxHeight: '30rem' }} fluid src={imgExtras} alt="Ausstattung" />
       <Row>
         <Col>

@@ -21,7 +21,7 @@ export default (props) => {
         { attribute: "Erforderliche Führerscheinklasse", value: "B (3)" }
     ];
     return (
-        <div>
+        <div className ="container">
             <Image style={{ maxHeight: '30rem' }} fluid src={imgWomo} alt="Technische Daten" />
             <Row>
                 <Col>

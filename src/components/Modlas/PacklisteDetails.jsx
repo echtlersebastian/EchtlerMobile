@@ -5,7 +5,7 @@ import PacklistePdf from '../../assets/img/Packliste 2020.pdf';
 
 export default () => {
   return (  
-    <div>
+    <div className ="container">
  <a href={PacklistePdf} download>Hier können Sie sich diese Liste auch herunterladen.</a><br/><br/>
 
     <Row>

@@ -5,7 +5,7 @@ import imgEquipment from "../../assets/img/AusstattungModal.png"
 
 export default () => {
   return (
-  <div>
+  <div className = "container">
     <Image style={{maxHeight : '30rem'}} fluid src={imgEquipment} alt="Ausstattung"/>
     <Row>
     <Col>

@@ -18,8 +18,8 @@ return(
             <div className="intro-text">
          
             {/*<div className="intro-heading text-uppercase">Mit dem Wohnmobil auf neuen Wegen!</div>*/}
-            <div className="intro-heading text-uppercase">Wir bauen um und sind bald für Sie da!</div>
-            <div className="intro-lead-in" href="tel:">Rufen sie doch an oder schreiben Sie eine E-Mail!</div>
+            <div className="intro-heading text-uppercase">Ihr Partner für Wohnmobile im Allgäu</div>
+            <div className="intro-lead-in">Urlaub auf die schöste Art und Weise!</div>
 
             <ul className="list-inline social-buttons">
           <li className="list-inline-item">
