@@ -17,7 +17,12 @@ RUN npm run build
 
 # Bundle app source
 #COPY build build
-COPY server.js server.js
 
+#TODO: move to /usr/echtlermobile
+FROM node:12.14
+COPY server.js server.js
+COPY --from=0 /build /build
+COPY package*.json ./
+RUN npm install
 EXPOSE 3001
 CMD [ "node", "server" ]
