@@ -21,7 +21,7 @@ export default (props) => {
       <Row>
         <Col>
           <ListGroup>
-            <ListGroup.Item active>Zubuchbare Optionen für ihre perfekte Reise</ListGroup.Item>
+            <ListGroup.Item active>Zubuchbare Optionen für Ihre perfekte Reise</ListGroup.Item>
             {optionals.map(({ label, price }, index) =>
               <ListGroup.Item key={index}>
                 <Row>
