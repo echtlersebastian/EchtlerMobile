@@ -2,6 +2,7 @@ import React from 'react'
 import AgbPdf from '../../assets/img/AGB 2020.pdf'
 
 
+
 export default (props) => {
 
   return (

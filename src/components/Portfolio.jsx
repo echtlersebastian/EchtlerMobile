@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from "react-bootstrap/Modal";
 import { Row, Col, Button } from "react-bootstrap"
 import images from "../assets/img/test.jpg"
+import ReactGa from 'react-ga'
 
 class Portfolio extends React.Component {
     constructor(props) {
@@ -12,10 +13,14 @@ class Portfolio extends React.Component {
         }
 
     }
+      
 
     render() {
         const handleClose = () => this.setState({ currentItem: null, show: false });
-        const handleShow = (item) => this.setState({ currentItem: item, show: true });
+        const handleShow = (item) => {this.setState({ currentItem: item, show: true }); ReactGa.event({
+            category: 'Button' ,
+            action: item.analytics
+        })};
         return (
             <section className="bg-light page-section" id="portfolio">
                 <div className="container">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import './assets/css/bootstrap.min.css';
 import './assets/css/agency.css';
@@ -38,9 +38,16 @@ import TimeLine5Img from './assets/img/TimeLine/5.png'
 import TimeLine6Img from './assets/img/TimeLine/6.png'
 import TimeLine7Img from './assets/img/TimeLine/7.png'
 import TimeLine8Img from './assets/img/TimeLine/8.png'
-
+import ReactGa from 'react-ga'
 
 function App() {
+
+useEffect(() =>{
+ReactGa.initialize('UA-159130984-1')
+ReactGa.pageview('/')
+
+}, [])
+
     toast.configure();
     const portfolioLinks = [
 
@@ -48,37 +55,43 @@ function App() {
         title: 'Unsere Wohnmobile',
         caption: 'Schauen Sie sich hier unsere Wohnmobile an.',
         image: WohnmobilPortfolioBild,
-        content : <WohnmobilDetails/>
+        content : <WohnmobilDetails/>,
+        analytics : '/Wohnmobile'
        },
        {
         title: 'Ausstattung',
         caption: 'Vieles was Sie brauchen ist bei uns im Preis enthalten.',
         image: AusstattungPortfolioBild,
-        content : <AustattungsDetails/>
+        content : <AustattungsDetails/> ,
+        analytics : '/Ausstattung'
        },
        {
         title: 'Mögliche Extras',
         caption: 'Bei uns bleiben keine Wünsche offen.',
         image: ExtrasPortfolioBild,
-        content : <ExtrasDetails/>
+        content : <ExtrasDetails/>,
+        analytics : '/Extras'
        },
        {
         title: 'Packliste',
         caption: 'Damit sie nichts vergessen',
         image: PacklistePortfolioBild,
-        content : <PacklisteModal></PacklisteModal>
+        content : <PacklisteModal></PacklisteModal>,
+        analytics : '/Packliste'
        },
        {
         title: 'Preisliste 2020',
         caption: 'Unser aktuelles Angebot für sie!',
         image: PreislistePortfolioBild,
-        content : <Preisliste></Preisliste>
+        content : <Preisliste></Preisliste>,
+        analytics : '/Preisliste'
        },
        {
         title: 'AGB',
         caption: 'Unsere Vertragsbedingungen',
         image: AGBPortfolioBild,
-        content : <AgbModal></AgbModal>
+        content : <AgbModal></AgbModal>,
+        analytics : '/AGB'
        }
     ]
 
