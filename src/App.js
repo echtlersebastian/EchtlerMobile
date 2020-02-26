@@ -74,7 +74,7 @@ ReactGa.pageview('/')
        },
        {
         title: 'Packliste',
-        caption: 'Damit sie nichts vergessen',
+        caption: 'Damit Sie nichts vergessen',
         image: PacklistePortfolioBild,
         content : <PacklisteModal></PacklisteModal>,
         analytics : '/Packliste'
