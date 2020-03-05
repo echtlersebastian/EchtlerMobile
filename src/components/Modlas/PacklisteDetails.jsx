@@ -14,7 +14,7 @@ export default () => {
         <ListGroup.Item active>Wichtiges</ListGroup.Item>    
       <ListGroup.Item>ACSI– Karte (Verbilligte Campingplätze)</ListGroup.Item>
 <ListGroup.Item>Pass</ListGroup.Item>
-<ListGroup.Item>Vignette (Österreich, Schweiz, Slowenien</ListGroup.Item>
+<ListGroup.Item>Vignette (Österreich, Schweiz, Slowenien)</ListGroup.Item>
 <ListGroup.Item>Geld und EC-Karten</ListGroup.Item>
 <ListGroup.Item>Womo-Schlüssel</ListGroup.Item>
 <ListGroup.Item>Fahrzeugschein</ListGroup.Item>
@@ -132,7 +132,7 @@ export default () => {
 <ListGroup.Item>Campingteppich</ListGroup.Item>
 <ListGroup.Item>Radio</ListGroup.Item>
 <ListGroup.Item>Rucksack</ListGroup.Item>
-<ListGroup.Item>Plastiktüten Müll</ListGroup.Item>
+<ListGroup.Item>Mülltüten</ListGroup.Item>
 <ListGroup.Item>Spülmittel/Putzzeug</ListGroup.Item>
 <ListGroup.Item>Gas</ListGroup.Item>
 <ListGroup.Item>Kerzen</ListGroup.Item>

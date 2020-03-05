@@ -18,7 +18,7 @@ export default () => {
         <ListGroup.Item>TV mit vollautomatischer Sat-Anlage</ListGroup.Item>
         <ListGroup.Item>Markise</ListGroup.Item>
         <ListGroup.Item>Kühlschrank (167 l) mit großen Gefrierfach (29 l)</ListGroup.Item> 
-        <ListGroup.Item>3 Flammiger Gasherd mit Edelstahlspüle</ListGroup.Item> 
+        <ListGroup.Item>Dreiflammiger Gasherd mit Edelstahlspüle</ListGroup.Item> 
         <ListGroup.Item>Truma Combi 6 Heizung / Warmwasserversorgung</ListGroup.Item>
       </ListGroup>
     </Col>

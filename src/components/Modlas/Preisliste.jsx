@@ -58,7 +58,7 @@ export default (props) => {
                       
                     <h4 align="left">135€</h4>
                     <h6 align="left">Darin sind enthalten:</h6>
-                    <p align="left">Ausführliche Einweisung in das Wohnmobil und Rücknahme, Schutzbrief (bei Unfall, Fahrerausfall und Panne) Verbandskasten und Feuerlöscher. Erstellung des Übergabe- und Abnahmeprotokolls.  </p>
+                    <p align="left">Ausführliche Einweisung in das Wohnmobil und Rücknahme, Schutzbrief (bei Unfall, Fahrerausfall und Panne), Verbandskasten und Feuerlöscher. Erstellung des Übergabe- und Abnahmeprotokolls.  </p>
                     
                   </Col>
                 </Row>
@@ -67,7 +67,7 @@ export default (props) => {
                     <h5 align="middle">Wohnmobil Ausstattung:</h5>
                   </Col>
                   <Col md={8}>
-                    <p align="left">Markise, Autom. SAT Antenne mit TV, Navigation für Wohnmobile, Radio, CD, Bluetooth,  Fahrradträger für 3 Fahrräder, Warntafel, 2 Ausgleichskeile, Wasserschlauch 15m, Stromkabel 20m mit CEE Stecker, eine volle 11kg Gasflasche, Melamin-Geschirr, Pfannen und Töpfe, Besteck, Gläser, Spülschüssel, WC-Sanitärzusatz und 2 Warnwesten. Bei uns ist auch der Campingtisch und 2Stühle im Preis enthalten! Weiteres Zubehör und mögliches Wunschzubehör entnehmen Sie der Ausstattungsübersicht.</p>
+                    <p align="left">Markise, Autom. SAT Antenne mit TV, Navigation für Wohnmobile, Radio, CD, Bluetooth,  Fahrradträger für 3 Fahrräder, Warntafel, 2 Ausgleichskeile, Wasserschlauch 15m, Stromkabel 20m mit CEE Stecker, eine volle 11kg Gasflasche, Melamin-Geschirr, Pfannen und Töpfe, Besteck, Gläser, Spülschüssel, WC-Sanitärzusatz und 2 Warnwesten. Bei uns ist auch der Campingtisch und 2 Stühle im Preis enthalten! Weiteres Zubehör und mögliches Wunschzubehör entnehmen Sie der Ausstattungsübersicht.</p>
                   </Col>
                 </Row>
                
@@ -92,7 +92,7 @@ export default (props) => {
                     <h5 align="middle">Zahlungsbedingungen:</h5>
                   </Col>
                   <Col md={8}>
-                    <p align="left">Die Anzahlung auf eine Buchung beträgt 30 %des Mietpreisreises, sofort. Der Restbetrag ist spätestens 21Tage vor Reiseantritt, ohne Abzug auf unser unten aufgeführtes Konto zu überweisen.</p>
+                    <p align="left">Die Anzahlung auf eine Buchung beträgt 30% des Mietpreisreises, sofort. Der Restbetrag ist spätestens 21 Tage vor Reiseantritt auf unser unten aufgeführtes Konto zu überweisen.</p>
                   </Col>
                 </Row>
                 <Row className="block-example border border-light">
@@ -100,7 +100,7 @@ export default (props) => {
                     <h5 align="middle">Kaution:</h5>
                   </Col>
                   <Col md={8}>
-                    <p align="left">Die Kaution beträgt 1.500 €. Diese ist im Voraus auf unser Konto zu überweisen. Nur nach vorheriger Absprache können wir eine Hinterlegung der Kaution bei Abholung des Fahrzeugs in bar akzeptieren.</p>
+                    <p align="left">Die Kaution beträgt 1.500€. Diese ist im Voraus auf unser Konto zu überweisen. Nur nach vorheriger Absprache können wir eine Hinterlegung der Kaution bei Abholung des Fahrzeugs in bar akzeptieren.</p>
                   </Col>
                 </Row>
                 <Row className="block-example border border-light">
@@ -108,7 +108,7 @@ export default (props) => {
                     <h5 align="middle">Rückgabe:</h5>
                   </Col>
                   <Col md={8}>
-                    <p align="left">Das Fahrzeug ist grundsätzlich in dem Zustand zurückzugeben, wie es erhalten wurde (s. Übergabeprotokoll). Das Fahrzeug ist mit gefülltem Tank und innen gereinigt zurück-zugeben. Die WC-Toilettenkassette muss geleert und gereinigt und der Grauwassertank geleert sein.</p>
+                    <p align="left">Das Fahrzeug ist grundsätzlich in dem Zustand zurückzugeben, wie es erhalten wurde (s. Übergabeprotokoll). Das Fahrzeug ist mit gefülltem Tank und innen gereinigt zurückzugeben. Die WC-Toilettenkassette muss geleert und gereinigt und der Grauwassertank geleert sein.</p>
                   </Col>
                 </Row>
                 <Row className="block-example border border-light">
@@ -116,7 +116,7 @@ export default (props) => {
                     <h5 align="middle">Zusätzlich anfallende Kosten bei nicht vertragsgemäßer Rückgabe:</h5>
                   </Col>
                   <Col md={8}>
-                    <p align="left">Toilettenreinigung 130,00 €<br/>  Innenreinigung 100,00 €<br/> Bei starker Verschmutzung im Außenbereich 100,00€.</p>
+                    <p align="left">Toilettenreinigung 130,00€<br/>  Innenreinigung 100,00€<br/> Bei starker Verschmutzung im Außenbereich 100,00€.</p>
                   </Col>
                 </Row>
 

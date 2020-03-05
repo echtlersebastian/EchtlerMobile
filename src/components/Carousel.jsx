@@ -27,27 +27,40 @@ import Carousel21 from '../assets/img/Carousel/21.jpg'
 
 export default () => {
     return(
-    <div className="container">
+    <div>
             <Carousel
             slidesPerPage={1}
             slidesPerScroll={1}
-            animationSpeed={4500}
+            animationSpeed={5000}
             autoPlay={1600}
             stopAutoPlayOnHover
-            offset={1500}
-            itemWidth={250}
+            offset={1700}
+            itemWidth={1600}
             clickToChange
             centered
             dots
             >
             <img img-fluid src={Carousel1} alt ="" />
-                    <img img-fluid src={Carousel1} alt ="" />
-                    <img img-fluid src={Carousel1} alt ="" />
-                    <img img-fluid src={Carousel1} alt ="" />
-                    <img img-fluid src={Carousel1} alt ="" />
-                    <img img-fluid src={Carousel1} alt ="" />
-                    <img img-fluid src={Carousel1} alt ="" />
-                    <img img-fluid src={Carousel1} alt ="" />
+                    <img img-fluid src={Carousel2} alt ="" />
+                    <img img-fluid src={Carousel3} alt ="" />
+                    <img img-fluid src={Carousel4} alt ="" />
+                    <img img-fluid src={Carousel5} alt ="" />
+                    <img img-fluid src={Carousel6} alt ="" />
+                    <img img-fluid src={Carousel7} alt ="" />
+                    <img img-fluid src={Carousel8} alt ="" />
+                    <img img-fluid src={Carousel9} alt ="" />
+                    <img img-fluid src={Carousel10} alt ="" />
+                    <img img-fluid src={Carousel11} alt ="" />
+                    <img img-fluid src={Carousel12} alt ="" />
+                    <img img-fluid src={Carousel13} alt ="" />
+                    <img img-fluid src={Carousel14} alt ="" />
+                    <img img-fluid src={Carousel15} alt ="" />
+                    <img img-fluid src={Carousel16} alt ="" />
+                    <img img-fluid src={Carousel17} alt ="" />
+                    <img img-fluid src={Carousel18} alt ="" />
+                    <img img-fluid src={Carousel19} alt ="" />
+                    <img img-fluid src={Carousel20} alt ="" />
+                    <img img-fluid src={Carousel21} alt ="" />
             </Carousel>
         
             </div>
