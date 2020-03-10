@@ -15,11 +15,11 @@ return(
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav text-uppercase ml-auto">
-          {/*
+         
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#services">Unser Service</a>
+            <a className="nav-link js-scroll-trigger" href="/buchung">Unser Service</a>
           </li>
-          <li className="nav-item">
+       {/*    <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#portfolio">Wohnmobile</a>
           </li>
           <li className="nav-item">
