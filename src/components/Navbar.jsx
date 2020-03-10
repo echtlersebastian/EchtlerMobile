@@ -17,7 +17,7 @@ return(
         <ul className="navbar-nav text-uppercase ml-auto">
          
           <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="/buchung">Jetzt Buchen!</a>
+            <a className="nav-link js-scroll-trigger" href="/buchung">Jetzt buchen!</a>
           </li>
        {/*    <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#portfolio">Wohnmobile</a>
