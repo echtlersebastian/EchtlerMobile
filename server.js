@@ -1,13 +1,17 @@
 const express =  require("express");
-const bodyParser =  require("body-parser").json();
+// const bodyParser =  require("body-parser");
+// const bodyParser2 =  require("body-parser");
 const mailer = require("nodemailer");
 const cors = require("cors");
 const path = require("path");
-
+require('dotenv/config');
 const app = express();
 
 app.use(cors());
-app.use(bodyParser);
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.json());
+app.use(express.urlencoded());
 
 app.use(express.static(path.join(__dirname, "/build")));
 
@@ -17,10 +21,30 @@ app.get("/buchung", (req,res)=>{
     res.sendFile(path.join(__dirname, "/build", "index.html"))
 })
 
+app.get("/buchung2", (resp)=>{
+    const MongoClient = require('mongodb').MongoClient;
+    const client = new MongoClient(process.env.DB_CONNECT, { useNewUrlParser: true });
+    client.connect(err => {
+      const collection = client.db("Echtler-Mobile").collection("Buchungen");
+      var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
 
-app.post("/buchung2", (req, resp)=>{
+today = yyyy + '/' + mm + '/' + dd;
+var query = "endDate >= ".concat(today);
+       var res = collection.find({query});
+        console.log(res);
+
+    })
+})
     
-    console.log("asdasd")    
+    // app.use(bodyParser);
+    app.post("/buchung2", (req, resp)=>{
+    var keys = Object.keys(req.body);
+    console.log(keys.toString());
+    console.log(req.body)    
+    console.log(req.params)    
     const vorname =req.body.vorname;
     const nachname =req.body.nachname;
     const geburtsdatum =req.body.geburtsdatum;
@@ -39,8 +63,7 @@ app.post("/buchung2", (req, resp)=>{
     
  
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://MongoDBUser:ZQjwpLG4cdA3IvvY@echtler-mobile-mp8sd.azure.mongodb.net/test?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true });
+const client = new MongoClient(process.env.DB_CONNECT, { useNewUrlParser: true });
 client.connect(err => {
   const collection = client.db("Echtler-Mobile").collection("Buchungen");
   var booking = {
@@ -65,6 +88,8 @@ client.connect(err => {
       console.log(err);
       resp.sendStatus(500)
     } 
+    
+    console.log("sucessfull stored the data in the DB");
     resp.sendStatus(200);
 
     // Close the database

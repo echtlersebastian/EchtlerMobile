@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <h2 className="section-heading text-uppercase">Unser Angebot</h2>
-                            <h3 className="section-subheading text-muted">Wir machen Ihren Traumurlaub perfekt</h3>
+                            <h3 className="section-subheading text-muted">Wir machen Ihren Traumurlaub perfekt.</h3>
                         </div>
                     </div>
                     <div className="row">

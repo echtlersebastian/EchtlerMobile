@@ -59,7 +59,7 @@ ReactGa.pageview('/')
        },
        {
         title: 'Ausstattung',
-        caption: 'Vieles was Sie brauchen ist bei uns im Preis enthalten.',
+        caption: 'Vieles das Sie brauchen, ist bei uns im Preis enthalten.',
         image: AusstattungPortfolioBild,
         content : <AustattungsDetails/> ,
         analytics : '/Ausstattung'
@@ -73,7 +73,7 @@ ReactGa.pageview('/')
        },
        {
         title: 'Packliste',
-        caption: 'Damit Sie nichts vergessen',
+        caption: 'Damit Sie nichts vergessen.',
         image: PacklistePortfolioBild,
         content : <PacklisteModal></PacklisteModal>,
         analytics : '/Packliste'
@@ -107,7 +107,7 @@ ReactGa.pageview('/')
        },
        {
         title: 'Ihre Entscheidung',
-        caption: 'Wild, oder gepflegt am Campingplatz wohnen.' ,
+        caption: 'Wild oder gepflegt am Campingplatz wohnen.' ,
         imgUrl: WildCampenImg
        },
        {
@@ -155,7 +155,7 @@ ReactGa.pageview('/')
        {
         title: 'Abholung des Wohnmobils zum vereinbarten Termin',
         subheading: 'Detaillierte Einweisung in alle Bereiche',
-        caption: 'Somit bekommen Sie Sicherheit für Ihre Reise',
+        caption: 'Somit bekommen Sie Sicherheit für Ihre Reise.',
         imgUrl: TimeLine5Img
        },
        {

@@ -12,6 +12,9 @@ import "react-datepicker/dist/react-datepicker.css";
 import { Row, Col, ListGroup, Image, ListGroupItem } from "react-bootstrap"
 import ContactUs from '../components/ContactUs';
 import axios from "axios";
+import BookingCalendar from 'react-booking-calendar';
+ 
+
  
 import {toast} from "react-toastify"
 
@@ -32,13 +35,23 @@ class Buchung extends React.Component {
       fax: "",
       email: "",
       startDate: new Date(),
-      endDate: new Date()
+      endDate: new Date(),
+      bookings: []
 
     };
 
+
+
+
+    toast.configure();
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
+
+    getAllBookings(){
+
+    }
+
     onChange(event) {
       this.setState({[event.target.name] : event.target.value});
     }
@@ -55,44 +68,69 @@ class Buchung extends React.Component {
       };
     
   onSubmit() {
-    debugger;
 
-    axios.post("/buchung2", {
-      anrede: this.state.anrede,
-      vorname: this.state.vorname,
-      nachname: this.state.nachname,
-      geburtsdatum: this.state.geburtsdatum,
-      firma: this.state.firma,
-      straße: this.state.straße,
-      plz: this.state.plz,
-      ort: this.state.ort,
-      land: this.state.land,
-      telefon: this.state.telefon,
-      fax: this.state.fax,
-      email: this.state.email,
-      startDate: this.state.startDate,
-      endDate: this.state.endDate
+    if (this.state.anrede && this.state.vorname && this.state.nachname && this.state.straße && this.state.plz && this.state.ort && this.state.land && this.state.telefon && 
+      this.state.email && this.state.startDate && this.state.endDate){
 
-    }).then((res)=>{
-      console.log("sucessfull send");
-      console.log(this.state.vorname);
-      toast.success("Danke! Ihre Anfrage ist bei uns eingegangen.", { 
-        position : toast.POSITION.BOTTOM_CENTER 
-      });
-    }).catch((e)=>{
-      
-console.log("error");
-      const errorMessage = <div><span>Beim Versenden ihrer Anfrage ist ein Fehler aufgetreten.</span>
+      //do stuff
+      const buchungObj = {
+        anrede: this.state.anrede,
+        vorname: this.state.vorname,
+        nachname: this.state.nachname,
+        geburtsdatum: this.state.geburtsdatum,
+        firma: this.state.firma,
+        straße: this.state.straße,
+        plz: this.state.plz,
+        ort: this.state.ort,
+        land: this.state.land,
+        telefon: this.state.telefon,
+        fax: this.state.fax,
+        email: this.state.email,
+        startDate: this.state.startDate,
+        endDate: this.state.endDate
+      }
+      axios.post("/buchung2", buchungObj).then((res)=>{
+        console.log("sucessfull send");
+        console.log(this.state.vorname);
+        toast.success("Danke! Ihre Anfrage ist bei uns eingegangen.", { 
+          position : toast.POSITION.BOTTOM_CENTER 
+        });
+      }).catch((e)=>{
+        
+        console.log("error");
+        const errorMessage = <div><span>Beim Versenden ihrer Anfrage ist ein Fehler aufgetreten.</span>
       <br/><span>Bitte kontaktieren sie uns telefonisch.</span></div>;
 
-      toast.error(errorMessage, { 
-        position : toast.POSITION.BOTTOM_CENTER 
-      });
-    })
-  } 
-  render(){
-    
-registerLocale('de', de)
+toast.error(errorMessage, { 
+  position : toast.POSITION.BOTTOM_CENTER 
+});
+})
+}else{
+  toast.error("Bitte füllen sie alle Pflichtfelder aus, damit sie die Buchung abschicken können", { 
+    position : toast.POSITION.BOTTOM_CENTER 
+  });
+}
+} 
+render(){
+  const bookings = [
+    new Date(2021, 0, 14),
+    new Date(2021, 0, 15),
+    new Date(2021, 0, 16),
+    new Date(2021, 0, 17),
+    new Date(2021, 0, 18),
+    new Date(2021, 0, 19),
+    new Date(2020, 7, 2),
+    new Date(2020, 7, 3),
+    new Date(2020, 7, 9),
+    new Date(2020, 7, 10),
+    new Date(2020, 7, 11),
+    new Date(2020, 7, 12),
+  ];
+   
+  const MyBookingCalendar = () => (
+    <BookingCalendar bookings={bookings} />
+  );
+  registerLocale('de', de)
   return (
     <div className="container">      
     <br/>    
@@ -101,6 +139,10 @@ registerLocale('de', de)
       <br/>    
       <br/>    
       <br/>
+      <div className ="container">
+
+      <BookingCalendar disableHistory="false" bookings={bookings} />
+      </div>
 <h1>Mietzeitraum:</h1>
 <br/>
 <Row>

@@ -92,7 +92,7 @@ export default (props) => {
                     <h5 align="middle">Zahlungsbedingungen:</h5>
                   </Col>
                   <Col md={8}>
-                    <p align="left">Die Anzahlung auf eine Buchung beträgt 30% des Mietpreisreises, sofort. Der Restbetrag ist spätestens 21 Tage vor Reiseantritt auf unser unten aufgeführtes Konto zu überweisen.</p>
+                    <p align="left">Die Anzahlung bei Buchung beträgt 30% des Mietpreises. Der Restbetrag ist spätestens 21 Tage vor Reiseantritt auf unser unten aufgeführtes Konto zu überweisen.</p>
                   </Col>
                 </Row>
                 <Row className="block-example border border-light">
@@ -108,7 +108,7 @@ export default (props) => {
                     <h5 align="middle">Rückgabe:</h5>
                   </Col>
                   <Col md={8}>
-                    <p align="left">Das Fahrzeug ist grundsätzlich in dem Zustand zurückzugeben, wie es erhalten wurde (s. Übergabeprotokoll). Das Fahrzeug ist mit gefülltem Tank und innen gereinigt zurückzugeben. Die WC-Toilettenkassette muss geleert und gereinigt und der Grauwassertank geleert sein.</p>
+                    <p align="left">Das Fahrzeug ist grundsätzlich in dem Zustand zurückzugeben, indem es auch bei der Übergabe erhalten wurde (s. Übergabeprotokoll). Das Fahrzeug ist mit gefülltem Tank und innen gereinigt zurückzugeben. Die WC-Toilettenkassette muss geleert und gereinigt und der Grauwassertank geleert sein.</p>
                   </Col>
                 </Row>
                 <Row className="block-example border border-light">

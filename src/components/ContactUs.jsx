@@ -51,8 +51,8 @@ class ContactUs extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Kontaktieren Sie uns unverbindlich hier</h2>
-              <h3 className="section-subheading text-white">Wir melden uns dann schnellstmöglich bei Ihnen</h3>
+              <h2 className="section-heading text-uppercase">Kontaktieren Sie uns unverbindlich</h2>
+              <h3 className="section-subheading text-white">Wir melden uns dann schnellstmöglich bei Ihnen.</h3>
             </div>
           </div>
           <div className="row">
