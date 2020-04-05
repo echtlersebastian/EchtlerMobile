@@ -17,20 +17,21 @@ function create(){
 
 */
 
-function checkAvailability(_startDate, _endDate){
+async function checkAvailability(_startDate, _endDate){
     let total = 0;
-    const case1 = Booking.find({ 
+
+    const case1 = await Booking.find({ 
         startDate: { 
             $lt: _startDate
         },
         endDate : {
             $gt: _endDate
         }
-    }).exec((err, result)=>{
-        err ?? console.log(err);
-        total += result.length;
+    }).count((err, result)=>{
+        err && console.log(err);
+        total += result;
     });
-    const case2 = Booking.find({
+    const case2 = await Booking.find({
         startDate : {
             $lt: _startDate,
             $gt: _endDate
@@ -39,11 +40,11 @@ function checkAvailability(_startDate, _endDate){
             $lt: _endDate,
             $gt: _startDate
         }
-      }).exec((err, result)=>{
-        err ?? console.log(err);
-        total += result.length;
+      }).count((err, result)=>{
+        err && console.log(err);
+        total += result;
     });
-    const case3 = Booking.find({
+    const case3 = await Booking.find({
         startDate: {
             $gt: _startDate,
             $lt: _endDate
@@ -52,23 +53,23 @@ function checkAvailability(_startDate, _endDate){
             $gt: _endDate,
             $gt: _startDate
         }
-    }).exec((err, result)=>{
-        err ?? console.log(err);
-        total += result.length;
+    }).count((err, result)=>{
+        err && console.log(err);
+        total += result;
     });
-    const case4 = Booking.find({
+    const case4 = await Booking.find({
         startDate: {
             $gt: _startDate
         },
         endDate: {
             $lt: _endDate
         }
-    }).exec((err, result)=>{
-        err ?? console.log(err);
-        total += result.length;
+    }).count((err, result)=>{
+        err && console.log(err);
+        total += result;
     });
 
-    return total <= 1;
+    return case1 + case2 + case3 + case4 <= 1;
 }
 
 module.exports = {

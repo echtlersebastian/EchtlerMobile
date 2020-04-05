@@ -30,13 +30,16 @@ app.get("/buchung", (req,res)=>{
 
 */
 
-app.get("/buchung3", (request, response)=>{
+app.get("/buchung3", (req, resp)=>{
     const startDate = req.body.startDate;
     const endDate = req.body.endDate;
-    const result = bookingService
-        .checkAvailability(startDate,endDate);
+    bookingService
+        .checkAvailability(startDate,endDate)
+        .then((res)=>{
+            resp.send({ canBook : res }); 
+        })
 
-    response.send({ canBook : result });   
+      
 })
 
 app.get("/buchung2", function (req, resp){
