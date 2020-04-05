@@ -1,15 +1,12 @@
 const express =  require("express");
-// const bodyParser =  require("body-parser");
-// const bodyParser2 =  require("body-parser");
 const mailer = require("nodemailer");
 const cors = require("cors");
 const path = require("path");
 require('dotenv/config');
 const app = express();
+const bookingService = require("./service/booking.service");
 
 app.use(cors());
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.urlencoded());
 
@@ -32,6 +29,15 @@ app.get("/buchung", (req,res)=>{
 
 
 */
+
+app.get("/buchung3", (request, response)=>{
+    const startDate = req.body.startDate;
+    const endDate = req.body.endDate;
+    const result = bookingService
+        .checkAvailability(startDate,endDate);
+
+    response.send({ canBook : result });   
+})
 
 app.get("/buchung2", function (req, resp){
     const cl = require("mongodb").MongoClient;
