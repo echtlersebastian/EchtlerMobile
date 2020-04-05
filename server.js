@@ -21,9 +21,30 @@ app.get("/buchung", (req,res)=>{
     res.sendFile(path.join(__dirname, "/build", "index.html"))
 })
 
-app.get("/buchung2", (resp)=>{
-    const MongoClient = require('mongodb').MongoClient;
-    const client = new MongoClient(process.env.DB_CONNECT, { useNewUrlParser: true });
+/*
+        a -- b Buchungen im System
+        x -- y sind neue Buchungen
+
+       1. a -- x -- y -- b
+       2. a -- x -- b -- y
+       3. x -- a -- y -- b
+       4. x -- a -- b -- y 
+
+
+*/
+
+app.get("/buchung2", function (req, resp){
+    const cl = require("mongodb").MongoClient;
+    cl.connect(process.env.DB_CONNECT, { useNewUrlParser: true })
+        .then((client)=>{
+            client.db("Echtler-Mobile").collection("Buchungen");
+
+        })
+
+
+
+    //const MongoClient = require('mongodb').MongoClient;
+    //const client = new MongoClient(process.env.DB_CONNECT, { useNewUrlParser: true });
     client.connect(err => {
       const collection = client.db("Echtler-Mobile").collection("Buchungen");
       var today = new Date();
@@ -32,12 +53,35 @@ app.get("/buchung2", (resp)=>{
     var yyyy = today.getFullYear();
 
 today = yyyy + '/' + mm + '/' + dd;
-var query = "endDate >= ".concat(today);
-       var res = collection.find({query});
-        console.log(res);
 
+
+        var bookingDates = [];
+
+        collection.find().toArray()
+        .then(items => {
+           bookingDates = items.map((item, index) =>{
+            var startDatString ="";
+            var endDatString="";
+               if (item.startDate && item.endDate){
+
+             startDatString = item.startDate.toString().slice(0,10);
+             endDatString = item.endDate.toString().slice(0,10);
+    
+        }
+            var rObj ={
+                startDate: startDatString,
+                endDate: endDatString
+            };
+            return rObj;
+        })
+        resp.send(bookingDates);
     })
+    });
+    
 })
+
+
+
     
     // app.use(bodyParser);
     app.post("/buchung2", (req, resp)=>{

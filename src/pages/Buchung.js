@@ -36,10 +36,10 @@ class Buchung extends React.Component {
       email: "",
       startDate: new Date(),
       endDate: new Date(),
-      bookings: []
+      bookings: [],
+      availabilityMessage: "Bitte wählen sie ein Start und ein Enddatum für ihre Reise aus!"
 
     };
-
 
 
 
@@ -47,8 +47,31 @@ class Buchung extends React.Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
+  
+  dayDifference(date1, date2) {  
+    var a = new Date(date1);
+    var b = new Date(date2);
 
-    getAllBookings(){
+    return b-a;
+ }
+    checkAvailability(){
+
+
+      axios.get("/buchung2").then((res)=>{
+          console.log(res.data)
+        var neueBuchungsTage = [];
+        var counter = 0;
+
+       
+         var a = this.dayDifference(this.state.endDate - this.state.startDate);
+console.log(a);
+        while(counter <= a){
+          neueBuchungsTage.push(this.state.startDate.getDate() + counter );
+          counter = counter +1;
+        }
+        console.log(neueBuchungsTage);
+
+      })
 
     }
 
@@ -59,14 +82,41 @@ class Buchung extends React.Component {
     handleStartDatePickerChange = date => {
       this.setState({
         startDate: date
-      });
+      }, this.handleAvailabilityMessage
+      );
     };
       handleEndDatePickerChange = date => {
         this.setState({
           endDate: date
-        });
+        }, this.handleAvailabilityMessage
+        );
+        
       };
-    
+    handleAvailabilityMessage(){
+      var today = new Date();
+
+      console.log("startDatum "  + this.state.startDate.getDate());
+      console.log("startDatum "  + this.state.startDate.getMonth());
+      console.log("endDatum "  + this.state.endDate.getDate());
+      console.log("endDatum "  + this.state.endDate.getMonth());
+      console.log("today "  + today.getDate());
+      console.log("today "  + today.getMonth());
+
+
+      //TODO: bisschen scheiße, weil ich ab heute nicht buchen kann... Andere Lösung muss gefudnen werden.
+      if (!((this.state.startDate.getDate() === today.getDate() && this.state.startDate.getMonth() === today.getMonth() && this.state.startDate.getFullYear() === today.getFullYear()) || (this.state.endDate.getDate() === today.getDate() && this.state.endDate.getMonth() === today.getMonth() && this.state.endDate.getFullYear() === today.getFullYear()))){
+        this.setState({
+          availabilityMessage: "Verfügbarkeit muss geprüft werden"
+        });
+        this.checkAvailability();
+      }else{
+        this.setState({
+          availabilityMessage: "Bitte wählen sie ein Start und ein Enddatum für ihre Reise aus!"
+        });
+      }
+    }
+
+
   onSubmit() {
 
     if (this.state.anrede && this.state.vorname && this.state.nachname && this.state.straße && this.state.plz && this.state.ort && this.state.land && this.state.telefon && 
@@ -130,7 +180,9 @@ render(){
   const MyBookingCalendar = () => (
     <BookingCalendar bookings={bookings} />
   );
-  registerLocale('de', de)
+  registerLocale('de', de);
+
+
   return (
     <div className="container">      
     <br/>    
@@ -141,10 +193,14 @@ render(){
       <br/>
       <div className ="container">
 
-      <BookingCalendar disableHistory="false" bookings={bookings} />
+     {/* <BookingCalendar disableHistory="false" bookings={bookings} />*/}
       </div>
 <h1>Mietzeitraum:</h1>
 <br/>
+<br/>
+<h3>{this.state.availabilityMessage}</h3>
+<br/>
+
 <Row>
   <Col>
     <h3>Von:</h3>
@@ -152,7 +208,7 @@ render(){
     <Col sm="5">
     <DatePicker
         locale="de"
-        selected={this.state.startDate}
+        selected = {this.state.startDate}
         onChange={this.handleStartDatePickerChange}
         dateFormat='dd.MM.yyyy'
       />
@@ -163,7 +219,7 @@ render(){
     <Col sm="5">
      <DatePicker
           locale="de"
-          selected={this.state.endDate}
+          selected = {this.state.endDate}
           onChange={this.handleEndDatePickerChange}
           dateFormat='dd.MM.yyyy'
    />

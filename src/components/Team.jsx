@@ -1,13 +1,6 @@
 
 import React from 'react'
 
-
-
-
-
-
-
-
 export default () => {
 return(
 <section className="bg-light page-section" id="team">
