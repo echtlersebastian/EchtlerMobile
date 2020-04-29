@@ -10,11 +10,9 @@ import de from 'date-fns/locale/de';
  
 import "react-datepicker/dist/react-datepicker.css";
 import { Row, Col, ListGroup, Image, ListGroupItem } from "react-bootstrap"
-import ContactUs from '../components/ContactUs';
 import axios from "axios";
 import BookingCalendar from 'react-booking-calendar';
  
-
  
 import {toast} from "react-toastify"
 
@@ -48,32 +46,6 @@ class Buchung extends React.Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
   
-  dayDifference(date1, date2) {  
-    var a = new Date(date1);
-    var b = new Date(date2);
-
-    return b-a;
- }
-    checkAvailability(){
-
-
-      axios.get("/buchung2").then((res)=>{
-          console.log(res.data)
-        var neueBuchungsTage = [];
-        var counter = 0;
-
-       
-         var a = this.dayDifference(this.state.endDate - this.state.startDate);
-console.log(a);
-        while(counter <= a){
-          neueBuchungsTage.push(this.state.startDate.getDate() + counter );
-          counter = counter +1;
-        }
-        console.log(neueBuchungsTage);
-
-      })
-
-    }
 
     onChange(event) {
       this.setState({[event.target.name] : event.target.value});
@@ -108,7 +80,6 @@ console.log(a);
         this.setState({
           availabilityMessage: "Verfügbarkeit muss geprüft werden"
         });
-        this.checkAvailability();
       }else{
         this.setState({
           availabilityMessage: "Bitte wählen sie ein Start und ein Enddatum für ihre Reise aus!"
@@ -139,7 +110,7 @@ console.log(a);
         startDate: this.state.startDate,
         endDate: this.state.endDate
       }
-      axios.post("/buchung2", buchungObj).then((res)=>{
+      axios.post("/", buchungObj).then((res)=>{
         console.log("sucessfull send");
         console.log(this.state.vorname);
         toast.success("Danke! Ihre Anfrage ist bei uns eingegangen.", { 
@@ -184,6 +155,7 @@ render(){
 
 
   return (
+ 
     <div className="container">      
     <br/>    
       <br/>    
