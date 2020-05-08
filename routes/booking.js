@@ -73,8 +73,9 @@ router.post('/', async (req, res) => {
 
         const busy = await bookingManager.busy(req.body.startDate, req.body.endDate);
         const busyRange = common.getBusyRange(busy);
-        const isAvailable = common.isAvailable(req.body.startDate, req.body.endDate, busyRange);
-        if (!isAvailable)
+        //todo debug me
+        const isAvailable = common.isAvailble(req.body.startDate, req.body.endDate, busyRange);
+        if (!isAvailable)        
             return res.status(400).send(`Date is already booked.`);
 
         const booking = await bookingManager.add({
