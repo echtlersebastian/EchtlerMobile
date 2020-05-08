@@ -1,12 +1,13 @@
 import React, { useEffect }  from 'react'
 import '../App.css';
-import '../assets/css/bootstrap.min.css';
 import '../assets/css/agency.css';
+import '../assets/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import ReactGa from 'react-ga'
 import DatePicker from "react-datepicker";
 import { registerLocale, setDefaultLocale } from  "react-datepicker";
 import de from 'date-fns/locale/de';
+import Calendar from '../components/test'
  
 import "react-datepicker/dist/react-datepicker.css";
 import { Row, Col, ListGroup, Image, ListGroupItem } from "react-bootstrap"
@@ -110,7 +111,7 @@ class Buchung extends React.Component {
         startDate: this.state.startDate,
         endDate: this.state.endDate
       }
-      axios.post("/", buchungObj).then((res)=>{
+      axios.post("/booking", buchungObj).then((res)=>{
         console.log("sucessfull send");
         console.log(this.state.vorname);
         toast.success("Danke! Ihre Anfrage ist bei uns eingegangen.", { 
@@ -165,7 +166,8 @@ render(){
       <br/>
       <div className ="container">
 
-     {/* <BookingCalendar disableHistory="false" bookings={bookings} />*/}
+   {/*   <BookingCalendar disableHistory="true" bookings={bookings} />*/}
+  
       </div>
 <h1>Mietzeitraum:</h1>
 <br/>

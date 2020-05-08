@@ -1,9 +1,15 @@
 import React from 'react'
-import { Row } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
+import Datenschutz from "../assets/img/Datenschutz.pdf"
+import AgbPdf from '../assets/img/AGB 2020.pdf'
 export default () => {
 return(    
 <footer className="footer" id="footer">
 <div className="container">
+  <Row>  
+    <Col align-self-center> <h3 align="center">Impressum:</h3>
+      <br></br></Col>
+      </Row>
   <Row>
   <div className="row align-items-center">
 
@@ -18,8 +24,7 @@ return(
     </div>
 
     <div className="col-md-4 copyright">
-      <h3>Impressum:</h3>
-      <br></br>
+   
       <h5>Echtler-Mobile</h5>
       <span>Handel und Vermietung von Wohnmobilen, Caravan und KFZ</span>
       <br></br>
@@ -28,11 +33,13 @@ return(
       <span>Osterhofstraße 3</span>
       <br></br>
       <span>87600 Kaufbeuren</span>
+      <br></br>
+      <span>Steuernummer 125/213/31435</span>
     </div>
 
     <div className="col-md-4 copyright"><br></br>
-      <br></br>
-      
+    <a href={Datenschutz} download>Unsere Datenschutzerklärung</a><br/><br/>  
+    <a href={AgbPdf} download>Unsere AGB's</a><br/><br/>    
       <span className="streitbeilegung">Wir sind nicht bereit und nicht verpflichtet an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</span>
     </div>
  
