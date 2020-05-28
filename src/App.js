@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import './assets/css/agency.css';
-import './assets/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import ReactGa from 'react-ga';
 import HomePage from './pages/HomePage';
 import Buchung from './pages/Buchung';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import CookieConsent from "react-cookie-consent";
+import './assets/css/bootstrap.min.css';
 
 function App() {
 
