@@ -32,6 +32,11 @@ app.get("/buchung", (req,res)=>{
     res.sendFile(path.join(__dirname, "/build", "index.html"))
 })
 
+app.get("/fotos", (req,res)=>{
+    console.log("GET index")
+    res.sendFile(path.join(__dirname, "/build", "index.html"))
+})
+
 // Accept POST for mailing
 app.post("/contactus", (req, resp)=>{
     console.log("asdasd")
