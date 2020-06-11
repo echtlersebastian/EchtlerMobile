@@ -7,6 +7,7 @@ const options = {
 
 const schema = new mongoose.Schema(
     {
+        wohnmobil: {type: {name: String, id: {type: Number, required: true }, required: true}},
         vorname: {type: String, required: true},
         nachname: {type: String, required: true},
         geburtsdatum: {type: String, required: true},

@@ -34,5 +34,18 @@ module.exports = {
         startDate = moment(startDate).toString().toLowerCase();
         endDate = moment(endDate).toString().toLowerCase();
         return busyRange.indexOf(startDate) === -1 && busyRange.indexOf(endDate) === -1;
+    },
+     groupBy: (list, keyGetter) => {
+        const map = new Map();
+        list.forEach((item) => {
+             const key = keyGetter(item);
+             const collection = map.get(key);
+             if (!collection) {
+                 map.set(key, [item]);
+             } else {
+                 collection.push(item);
+             }
+        });
+        return map;
     }
 }
