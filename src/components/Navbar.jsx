@@ -20,6 +20,9 @@ return(
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="/buchung">Jetzt buchen!</a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="/fotos">Bilder</a>
+          </li>
        {/*    <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#portfolio">Wohnmobile</a>
           </li>
