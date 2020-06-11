@@ -2,7 +2,8 @@ export const photos = [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
       width: 4,
-      height: 3
+      height: 3,
+      title: 'Test, dies ist meine sehr langer Text Test Test'
     },
     {
       src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
