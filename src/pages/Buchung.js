@@ -157,18 +157,11 @@ render(){
 
   return (
  
-    <div className="container">      
-    <br/>    
-      <br/>    
-      <br/>    
-      <br/>    
-      <br/>    
-      <br/>
-      <div className ="container">
-
-   {/*   <BookingCalendar disableHistory="true" bookings={bookings} />*/}
-  
-      </div>
+    <div className="container content-body">      
+    
+      {/* <div className ="container">
+     <BookingCalendar disableHistory="true" bookings={bookings} />  
+      </div> */}
 <h1>Mietzeitraum:</h1>
 <br/>
 <br/>
