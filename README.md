@@ -1,5 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is outdated. All information in this Repository is no longer valid. Thats why this repo is public. 
+The Repository of the new .NET6/React based Echtler-Mobile Webapplication will be published soon. 
 
+
+Standard Docs: 
 ## Available Scripts
 
 In the project directory, you can run:
