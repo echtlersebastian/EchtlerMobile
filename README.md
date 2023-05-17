@@ -1,3 +1,4 @@
+# READ THIS!
 This project is outdated. All information in this Repository is no longer valid. Thats why this repo is public. 
 The Repository of the new .NET6/React based Echtler-Mobile Webapplication will be published soon. 
 
